@@ -1,0 +1,131 @@
+/*===========================================================
+product details CSS
+=============================================================*/
+.product-details .product-details-wrapper{
+  padding: 64px;
+}
+.product-details-wrapper .product-description .main-feature{
+  padding-right: 0;
+}
+.details-description{
+  padding-top: 64px;
+  padding-bottom: 40px;
+}
+.details-description .nav-tabs{
+  border: 0;
+}
+.details-description .nav-tabs .nav-link {
+  border-radius: 0;
+  padding: 14px 44px;
+  font-size: 14px;
+  font-weight: 700;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  text-transform: uppercase;
+}
+.details-description .nav-tabs .nav-link.active{
+  border-color: rgba(115, 113, 252, 0.08);
+  background-color: rgba(115, 113, 252, 0.08);
+}
+.details-description .nav-tabs .nav-item:not(:last-child){
+  margin-right: 2px;
+}
+.details-description .nav-tabs .nav-item:first-child .nav-link{
+  border-top-left-radius: 16px;
+}
+.details-description .nav-tabs .nav-item:last-child .nav-link{
+  border-top-right-radius: 16px;
+}
+.details-description .tab-content{
+  padding-top: 32px;
+}
+.details-description .tab-content .tab-pane{
+  padding: 57px 0 24px 57px;
+}
+.details-description .desc-text{
+  padding-right: 50px;
+}
+.details-description .desc-text h4{
+  font-size: 24px;
+  font-weight: 700;
+  color: #252525;
+  padding-bottom: 24px;
+}
+.details-description .desc-text p{
+  font-size: 16px;
+  color: #666666;
+  padding-bottom: 24px;
+}
+
+.details-description .desc-text ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+.details-description .desc-text ul li{
+  width: 50%;
+  color: #636363;
+  font-weight: 500;
+  font-size: 16px;
+  padding-left: 30px;
+  position: relative;
+}
+.details-description .desc-text ul li:not(:last-child){
+  margin-bottom: 24px;
+}
+.details-description .desc-text ul li::before{
+  content: '';
+  width: 0; 
+  height: 0; 
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 6px solid var(--primary);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+.details-description .product-desc-slider .item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 533px;
+  width: 100%;
+  background-color: #F9F9FB;
+  border-radius: 16px;
+}
+.details-description .product-desc-slider .slick-dots{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 22px;
+}
+.details-description .product-desc-slider .slick-dots button{
+  font-size: 0;
+  height: 8px;
+  width: 8px;
+  background-color: #D9D9D9;
+  opacity: 1;
+  transition: all 0.3s;
+  border-radius: 50%;
+}
+.details-description .product-desc-slider .slick-active button{
+  background-color: var(--primary);
+}
+
+/*===========================================================
+related product CSS
+=============================================================*/
+.related-products{
+  padding: 40px 0;
+}
+.related-products .title{
+  padding-bottom: 40px;
+}
+.related-products .title h2{
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--black);
+}

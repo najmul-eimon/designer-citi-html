@@ -1,0 +1,503 @@
+/*===========================================================
+banner CSS
+=============================================================*/
+.banner .banner-slide{
+  border-radius: 30px;
+}
+.banner .slide-item{
+  background: url('../images/banner.png') no-repeat center;
+  background-size: cover;
+  padding: 50px 96px;
+}
+.banner h1{
+  color: #383838;
+  font-size: 52px;
+  font-weight: 700;
+  font-family: var(--montserrat);
+}
+.banner p{
+  color: #A7A7A7;
+  font-size: 22px;
+  line-height: 37px;
+  max-width: 503px;
+  padding-top: 37px;
+  padding-bottom: 44px;
+}
+.banner .shop-now{
+  display: inline-block;
+  padding: 16px 27px;
+  color: var(--grey-bg2);
+  background-color: var(--primary);
+  border-radius: 8px;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+.banner .banner-slide{
+  margin: 32px 20px;
+}
+.banner .button-next,
+.banner .button-prev{
+  height: 44px;
+  width: 44px;
+  border-radius: 8px;
+  background-color: var(--grey-bg2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 20;
+}
+.banner .button-prev{
+  left: -22px;
+}
+.banner .button-next{
+  right: -22px;
+}
+.banner .button-next i,
+.banner .button-prev i{
+  color: var(--orange);
+  font-size: 20px;
+}
+.banner .slick-dots{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 38px;
+}
+.banner .slick-dots button{
+  font-size: 0;
+  height: 11px;
+  width: 11px;
+  background-color: var(--grey-bg2);
+  opacity: 1;
+  transition: all 0.3s;
+  border-radius: 50%;
+}
+.banner .slick-active button{
+  width: 30px;
+  background-color: var(--primary);
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 1199px) {
+  .banner{
+    margin-top: 60px;
+  }
+}
+@media screen and (max-width:767px) {
+  .banner .slide-item{
+    background: url('../images/banner-sm.png') no-repeat center;
+    background-size: cover;
+  }
+  .banner .button-next,
+  .banner .button-prev{
+    display: none;
+  }
+  .banner .banner-slide{
+    margin: 0;
+  }
+  .banner .slide-item{
+    padding: 40px 16px 88px;
+    border-radius: 0;
+    text-align: center;
+  }
+  .banner .banner-col{
+    padding: 0 !important;
+  }
+  .banner h1{
+    font-size: 24px;
+  }
+  .banner p{
+    font-size: 14px;
+    line-height: 21px;
+    margin: auto;
+  }
+  .banner .shop-now{
+    padding: 10px 24px;
+    font-size: 14px;
+  }
+  .banner .slick-dots button {
+    height: 8px;
+    width: 8px;
+  }
+  .banner .slick-active button {
+    width: 30px;
+    border-radius: 8px;
+  }
+}
+
+@media (min-width:576px) and (max-width:767px) {
+  .banner .banner-slide{
+    margin: 10px;
+  }
+  .banner h1{
+    font-size: 28px;
+  }
+  .banner p{
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .banner .shop-now{
+    font-size: 16px;
+  }
+  .banner .slick-dots button {
+    height: 10px;
+    width: 10px;
+  }
+  .banner .slick-active button {
+    width: 30px;
+    border-radius: 8px;
+  }
+}
+@media (min-width:768px) and (max-width:991px) {
+  .banner .button-next,
+  .banner .button-prev{
+    display: none;
+  }
+  .banner .banner-slide{
+    margin: 20px 0;
+  }
+  .banner .slide-item{
+    padding: 40px 16px 80px;
+    border-radius: 0;
+    text-align: center;
+  }
+  .banner h1{
+    font-size: 28px;
+  }
+  .banner p{
+    font-size: 16px;
+    line-height: 22px;
+    max-width: 100%;
+  }
+}
+@media (min-width:992px) and (max-width:1199px) {
+  .banner h1{
+    font-size: 38px;
+  }
+  .banner p{
+    font-size: 18px;
+    line-height: 28px;
+    max-width: 100%;
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+}
+@media (min-width:1200px) and (max-width:1399px) {
+  .banner h1{
+    font-size: 46px;
+  }
+  .banner p{
+    font-size: 18px;
+    line-height: 28px;
+    max-width: 80%;
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+}
+
+/*===========================================================
+top-category CSS
+=============================================================*/
+.top-category{
+  padding: 40px 0;
+}
+.top-category .title{
+  padding-bottom: 40px;
+}
+.top-category .title h2{
+  font-size: 32px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--black);
+}
+.top-category .single-category{
+  max-height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  padding: 28px 22px;
+  border: 1px solid rgba(57, 61, 79, 0.1);
+  background-color: #FBFBFB;
+  border-radius: 16px;
+}
+.top-category .single-category span{
+  display: inline-block;
+  color: var(--light-black);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@media screen and (max-width:767px) {
+  .top-category .title{
+    padding-bottom: 24px;
+  }
+  .top-category .title h2{
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .top-category .single-category{
+    padding: 8px 6px;
+    border: 1px solid rgba(57, 61, 79, 0.03);
+    flex-direction: column;
+    height: 100px;
+  }
+  .top-category .single-category span{
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+  }
+  .top-category .single-category img{
+    height: 56px;
+  }
+  .top-category .top-category-row.row{
+    --bs-gutter-y: 1rem;
+    --bs-gutter-x: 1rem;
+  }
+}
+@media (min-width:576px) and (max-width:767px) {
+  .top-category .title h2{
+    font-size: 22px;
+  }
+  .top-category .single-category span{
+    font-size: 14px;
+  }
+}
+@media (min-width:768px) and (max-width:991px) {
+  .top-category .single-category{
+    padding: 15px;
+    gap: 10px;
+    flex-direction: column;
+  }
+  .top-category .single-category span {
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+@media (min-width:1200px) and (max-width:1399px) {
+  .top-category .single-category {
+    padding: 20px;
+    gap: 4px;
+  }
+  .top-category .single-category img{
+    width: 50px;
+  }
+  .top-category .single-category span {
+    font-size: 14px;
+  }
+}
+@media (min-width:1400px) and (max-width:1599px) {
+  .top-category .single-category img{
+    width: 56px;
+  }
+}
+
+/*===========================================================
+featured-product CSS
+=============================================================*/
+.featured-product{
+  padding: 64px 0;
+}
+.featured-product .title{
+  padding-bottom: 64px;
+}
+.featured-product .title h2{
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--secondary);
+}
+.featured-product .title a{
+  display: inline-block;
+  padding: 10px 12px;
+  background-color: var(--primary);
+  color: var(--white);
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+
+@media screen and (max-width:767px) {
+  .featured-product{
+    padding: 40px 0;
+  }
+  .featured-product .featured-row{
+    --bs-gutter-y: 1.5rem;
+  }
+  .featured-product .title{
+    flex-direction: column;
+    padding-bottom: 24px;
+  }
+  .featured-product .title h2{
+    padding-bottom: 16px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .featured-product .title a{
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+}
+@media (min-width:576px) and (max-width:767px) {
+  .featured-product .title{
+    flex-direction: row;
+  }
+  .featured-product .title h2{
+    font-size: 18px;
+  }
+}
+@media (min-width:768px) and (max-width:991px) {
+  .featured-product .featured-row{
+    --bs-gutter-y: 1.5rem;
+  }
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+  .featured-product .featured-row{
+    --bs-gutter-y: 1.5rem;
+  }
+}
+
+
+/*===========================================================
+promotion CSS
+=============================================================*/
+.promotion{
+  padding: 64px 0;
+}
+.promotion .img{
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.promotion h4{
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--secondary);
+}
+.promotion p{
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6);
+  padding-top: 8px;
+  padding-bottom: 24px;
+}
+.promotion .shop-now{
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  color: var(--secondary);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border: 1px solid var(--secondary);
+  background-color: transparent;
+}
+
+@media screen and (max-width:767px) {
+  .promotion{
+    padding: 40px 0;
+  }
+  .promotion .img{
+    border-radius: 8px;
+    margin-bottom: 16px;
+  }
+  .promotion h4{
+    font-size: 14px;
+  }
+  .promotion p{
+    padding-bottom: 12px;
+    font-size: 12px;
+  }
+  .promotion .shop-now{
+    padding: 5px 6px;
+    gap: 5px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .promotion .promotion-row{
+    --bs-gutter-y: 1.5rem;
+  }
+}
+@media (min-width:768px) and (max-width:991px) {
+  .promotion h4{
+    font-size: 16px;
+  }
+  .promotion p{
+    padding-bottom: 14px;
+    font-size: 14px;
+  }
+  .promotion .shop-now{
+    padding: 8px 10px;
+    gap: 8px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .promotion .img{
+    border-radius: 10px;
+  }
+}
+
+/*===========================================================
+trending CSS
+=============================================================*/
+.trending{
+  padding: 64px 0;
+}
+.trending .title{
+  padding-bottom: 24px;
+}
+.trending .title h2{
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--secondary);
+  line-height: 36px;
+  padding-bottom: 0;
+}
+.trending .load-more{
+  padding-top: 16px;
+}
+.trending .load-more-btn{
+  width: 276px;
+  text-align: center;
+  padding: 12px 0;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  color: var(--primary);
+  text-transform: uppercase;
+  border-radius: 8px;
+  border: 1.5px solid var(--primary);
+}
+@media screen and (max-width:767px) {
+  .trending{
+    padding: 40px 0;
+  }
+  .trending .title h2{
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .trending .load-more{
+    padding-top: 0;
+  }
+  .trending .load-more-btn{
+    width: auto;
+    padding: 10px 24px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+@media (min-width:576px) and (max-width:767px) {
+  .trending .title h2{
+    font-size: 18px;
+  }
+}
