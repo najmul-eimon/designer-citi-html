@@ -1,7 +1,8 @@
 /*===========================================================
 banner CSS
 =============================================================*/
-.banner .banner-slide{
+
+.banner .slick-list{
   border-radius: 30px;
 }
 .banner .slide-item{
@@ -85,7 +86,7 @@ banner CSS
 }
 
 @media screen and (max-width: 1199px) {
-  .banner{
+  main{
     margin-top: 60px;
   }
 }
@@ -94,12 +95,11 @@ banner CSS
     background: url('../images/banner-sm.png') no-repeat center;
     background-size: cover;
   }
-  .banner .button-next,
-  .banner .button-prev{
-    display: none;
-  }
   .banner .banner-slide{
     margin: 0;
+  }
+  .banner .slick-list{
+    border-radius: 0;
   }
   .banner .slide-item{
     padding: 40px 16px 88px;
@@ -121,6 +121,9 @@ banner CSS
     padding: 10px 24px;
     font-size: 14px;
   }
+  .banner .slick-dots{
+    bottom: 12px;
+  }
   .banner .slick-dots button {
     height: 8px;
     width: 8px;
@@ -134,6 +137,9 @@ banner CSS
 @media (min-width:576px) and (max-width:767px) {
   .banner .banner-slide{
     margin: 10px;
+  }
+  .banner .slick-list{
+    border-radius: 20px;
   }
   .banner h1{
     font-size: 28px;

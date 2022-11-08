@@ -92,9 +92,12 @@
                   </button>
                 </li>
                 <li>
-                  <button type="button" class="fav-btn"><i class="ph-heart-straight"></i></button>
+                  <button type="button" class="fav-btn position-relative">
+                    <i class="ph-heart-straight"></i>
+                    <span>9</span>
+                  </button>
                 </li>
-                <li>
+                <li class="position-relative desktop_cart_box">
                   <div class="d-flex align-items-center bag">
                     <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M16.8989 5.34863C16.3418 4.93078 15.6793 4.67633 14.9857 4.61379C14.2921 4.55124 13.5948 4.68308 12.9719 4.99453C12.349 5.30598 11.8251 5.78473 11.459 6.37714C11.0929 6.96955 10.8989 7.65221 10.8989 8.34863V10.5986H9.39893C9.0011 10.5986 8.61957 10.7567 8.33827 11.038C8.05696 11.3193 7.89893 11.7008 7.89893 12.0986V24.0986C7.89893 25.2921 8.37303 26.4367 9.21695 27.2806C10.0609 28.1245 11.2055 28.5986 12.3989 28.5986H22.1489C23.1435 28.5986 24.0973 28.2035 24.8006 27.5003C25.5038 26.797 25.8989 25.8432 25.8989 24.8486V12.0986C25.8989 11.7008 25.7409 11.3193 25.4596 11.038C25.1783 10.7567 24.7967 10.5986 24.3989 10.5986H22.8989V8.34863C22.8989 7.65221 22.705 6.96955 22.3389 6.37714C21.9727 5.78473 21.4489 5.30598 20.826 4.99453C20.2031 4.68308 19.5058 4.55124 18.8122 4.61379C18.1185 4.67633 17.4561 4.93078 16.8989 5.34863V5.34863ZM12.3989 8.34863C12.3989 7.7519 12.636 7.1796 13.0579 6.75764C13.4799 6.33569 14.0522 6.09863 14.6489 6.09863C15.2457 6.09863 15.818 6.33569 16.2399 6.75764C16.6619 7.1796 16.8989 7.7519 16.8989 8.34863V10.5986H12.3989V8.34863ZM17.8994 6.47663C18.2383 6.25036 18.6322 6.12034 19.0392 6.10047C19.4462 6.0806 19.8509 6.17163 20.2102 6.36382C20.5695 6.55602 20.8699 6.84217 21.0792 7.19174C21.2886 7.54131 21.3991 7.94117 21.3989 8.34863V10.5986H18.3989V8.34863C18.3989 7.66763 18.2174 7.02863 17.8994 6.47663ZM12.3989 27.0986C11.6033 27.0986 10.8402 26.7826 10.2776 26.22C9.715 25.6573 9.39893 24.8943 9.39893 24.0986V12.0986H18.3989V24.8486C18.3989 25.6931 18.6779 26.4716 19.1489 27.0986H12.3989ZM24.3989 24.8486C24.3989 25.4454 24.1619 26.0177 23.7399 26.4396C23.318 26.8616 22.7457 27.0986 22.1489 27.0986C21.5522 27.0986 20.9799 26.8616 20.5579 26.4396C20.136 26.0177 19.8989 25.4454 19.8989 24.8486V12.0986H24.3989V24.8486Z" fill="white"/>
@@ -103,6 +106,102 @@
                         <p><span>Item</span>19</p>
                         <p><span>BDT</span>215478</p>
                       </div>                  
+                  </div>
+
+                  <div class="desktop_cart">
+                    <span class="cart_arrow"></span>
+
+                    <div class="desktop_cart_content">
+                      <form action="#">
+                        <div class="items_no">
+                          <h2>3 ITEMS</h2>
+                        </div>
+
+                        <div class="menu_content_heading">
+                          <h4>Selected Item</h4>
+                        </div>
+
+                        <ul class="selected-cart-items custom-scrollbar">
+                          <li class="carted_items d-flex justify-content-around align-items-center">
+                            <button type="button"><i class="ph-x"></i></button>
+
+                            <div class="carted_image">
+                              <img src="assets/images/featured/img1.png" class="img-fluid" alt="" />
+                            </div>
+
+                            <div class="carted_item_name d-flex flex-column justify-content-between">
+                              <h3>Tee-shirt ZEUS Réflective – Blanc</h3>
+                              <p class="item_quantity">250gm</p>
+                            </div>
+
+                            <div class="cart_counter d-flex flex-column justify-content-between align-items-end">
+                              <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                <button type="button" class="btn">-</button>
+                                <input disabled class="form-control text-center" value="1" type="text" readonly />
+                                <button type="button" class="btn">+</button>
+                              </div>
+
+                              <p class="item_price">
+                                <span>BDT </span> <span class="single_price">200</span>
+                              </p>
+                            </div>
+                          </li>
+                          <li class="carted_items d-flex justify-content-around align-items-center">
+                            <button type="button"><i class="ph-x"></i></button>
+
+                            <div class="carted_image">
+                              <img src="assets/images/featured/img2.png" class="img-fluid" alt="" />
+                            </div>
+
+                            <div class="carted_item_name d-flex flex-column justify-content-between">
+                              <h3>Tee-shirt ZEUS Réflective – Blanc</h3>
+                              <p class="item_quantity">250gm</p>
+                            </div>
+
+                            <div class="cart_counter d-flex flex-column justify-content-between align-items-end">
+                              <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                <button type="button" class="btn">-</button>
+                                <input disabled class="form-control text-center" value="1" type="text" readonly />
+                                <button type="button" class="btn">+</button>
+                              </div>
+
+                              <p class="item_price">
+                                <span>BDT </span> <span class="single_price">200</span>
+                              </p>
+                            </div>
+                          </li>
+                          <li class="carted_items d-flex justify-content-around align-items-center">
+                            <button type="button"><i class="ph-x"></i></button>
+
+                            <div class="carted_image">
+                              <img src="assets/images/featured/img3.png" class="img-fluid" alt="" />
+                            </div>
+
+                            <div class="carted_item_name d-flex flex-column justify-content-between">
+                              <h3>Tee-shirt ZEUS Réflective – Blanc</h3>
+                              <p class="item_quantity">250gm</p>
+                            </div>
+
+                            <div class="cart_counter d-flex flex-column justify-content-between align-items-end">
+                              <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                <button type="button" class="btn">-</button>
+                                <input disabled class="form-control text-center" value="1" type="text" readonly />
+                                <button type="button" class="btn">+</button>
+                              </div>
+
+                              <p class="item_price">
+                                <span>BDT </span> <span class="single_price">200</span>
+                              </p>
+                            </div>
+                          </li>
+                        </ul>
+
+                        <div class="desktop_place_order">
+                          <button type="submit" class="place_order">Place Order</button>
+                          <button href=""><span>BDT </span> 423</button>
+                        </div>
+                      </form>
+                    </div>
                   </div>
                 </li>
               </ul>
@@ -3425,9 +3524,16 @@
                       <span>Smart Watch</span>
                       <a href="product-details.html" class="product-name">Waterproof Sport Smart Watch Monitor for ios & Android</a>
                       <h5>$2,013.54 </h5>
+
                       <div class="d-flex align-items-center justify-content-between buttons">
                         <button type="button" class="buy-now">Buy Now</button>
-                        <button type="button" class="add-to-cart">Add to cart</button>
+                        <button type="button" class="add-to-cart static_btn">Add to cart</button>
+
+                        <div class="btn-group counter_btn" role="group" aria-label="Basic outlined example">
+                          <button type="button" class="add_to_bag remove_btn"> - </button>
+                          <input disabled="" class="text-center" value="1">
+                          <button type="button" class="add_to_bag add_btn">+</button>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -3442,9 +3548,16 @@
                       <span>Smart Watch</span>
                       <a href="product-details.html" class="product-name">Waterproof Sport Smart Watch Monitor for ios & Android</a>
                       <h5>$2,013.54 </h5>
+                      
                       <div class="d-flex align-items-center justify-content-between buttons">
                         <button type="button" class="buy-now">Buy Now</button>
-                        <button type="button" class="add-to-cart">Add to cart</button>
+                        <button type="button" class="add-to-cart static_btn">Add to cart</button>
+
+                        <div class="btn-group counter_btn" role="group" aria-label="Basic outlined example">
+                          <button type="button" class="add_to_bag remove_btn"> - </button>
+                          <input disabled="" class="text-center" value="1">
+                          <button type="button" class="add_to_bag add_btn">+</button>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -3459,9 +3572,16 @@
                       <span>Smart Watch</span>
                       <a href="product-details.html" class="product-name">Waterproof Sport Smart Watch Monitor for ios & Android</a>
                       <h5>$2,013.54 </h5>
+                      
                       <div class="d-flex align-items-center justify-content-between buttons">
                         <button type="button" class="buy-now">Buy Now</button>
-                        <button type="button" class="add-to-cart">Add to cart</button>
+                        <button type="button" class="add-to-cart static_btn">Add to cart</button>
+
+                        <div class="btn-group counter_btn" role="group" aria-label="Basic outlined example">
+                          <button type="button" class="add_to_bag remove_btn"> - </button>
+                          <input disabled="" class="text-center" value="1">
+                          <button type="button" class="add_to_bag add_btn">+</button>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -3476,9 +3596,16 @@
                       <span>Smart Watch</span>
                       <a href="product-details.html" class="product-name">Waterproof Sport Smart Watch Monitor for ios & Android</a>
                       <h5>$2,013.54 </h5>
+                      
                       <div class="d-flex align-items-center justify-content-between buttons">
                         <button type="button" class="buy-now">Buy Now</button>
-                        <button type="button" class="add-to-cart">Add to cart</button>
+                        <button type="button" class="add-to-cart static_btn">Add to cart</button>
+
+                        <div class="btn-group counter_btn" role="group" aria-label="Basic outlined example">
+                          <button type="button" class="add_to_bag remove_btn"> - </button>
+                          <input disabled="" class="text-center" value="1">
+                          <button type="button" class="add_to_bag add_btn">+</button>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -3493,9 +3620,16 @@
                       <span>Smart Watch</span>
                       <a href="product-details.html" class="product-name">Waterproof Sport Smart Watch Monitor for ios & Android</a>
                       <h5>$2,013.54 </h5>
+                      
                       <div class="d-flex align-items-center justify-content-between buttons">
                         <button type="button" class="buy-now">Buy Now</button>
-                        <button type="button" class="add-to-cart">Add to cart</button>
+                        <button type="button" class="add-to-cart static_btn">Add to cart</button>
+
+                        <div class="btn-group counter_btn" role="group" aria-label="Basic outlined example">
+                          <button type="button" class="add_to_bag remove_btn"> - </button>
+                          <input disabled="" class="text-center" value="1">
+                          <button type="button" class="add_to_bag add_btn">+</button>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -3510,9 +3644,16 @@
                       <span>Smart Watch</span>
                       <a href="product-details.html" class="product-name">Waterproof Sport Smart Watch Monitor for ios & Android</a>
                       <h5>$2,013.54 </h5>
+                      
                       <div class="d-flex align-items-center justify-content-between buttons">
                         <button type="button" class="buy-now">Buy Now</button>
-                        <button type="button" class="add-to-cart">Add to cart</button>
+                        <button type="button" class="add-to-cart static_btn">Add to cart</button>
+
+                        <div class="btn-group counter_btn" role="group" aria-label="Basic outlined example">
+                          <button type="button" class="add_to_bag remove_btn"> - </button>
+                          <input disabled="" class="text-center" value="1">
+                          <button type="button" class="add_to_bag add_btn">+</button>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -3527,9 +3668,16 @@
                       <span>Smart Watch</span>
                       <a href="product-details.html" class="product-name">Waterproof Sport Smart Watch Monitor for ios & Android</a>
                       <h5>$2,013.54 </h5>
+                      
                       <div class="d-flex align-items-center justify-content-between buttons">
                         <button type="button" class="buy-now">Buy Now</button>
-                        <button type="button" class="add-to-cart">Add to cart</button>
+                        <button type="button" class="add-to-cart static_btn">Add to cart</button>
+
+                        <div class="btn-group counter_btn" role="group" aria-label="Basic outlined example">
+                          <button type="button" class="add_to_bag remove_btn"> - </button>
+                          <input disabled="" class="text-center" value="1">
+                          <button type="button" class="add_to_bag add_btn">+</button>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -3544,9 +3692,16 @@
                       <span>Smart Watch</span>
                       <a href="product-details.html" class="product-name">Waterproof Sport Smart Watch Monitor for ios & Android</a>
                       <h5>$2,013.54 </h5>
+                      
                       <div class="d-flex align-items-center justify-content-between buttons">
                         <button type="button" class="buy-now">Buy Now</button>
-                        <button type="button" class="add-to-cart">Add to cart</button>
+                        <button type="button" class="add-to-cart static_btn">Add to cart</button>
+
+                        <div class="btn-group counter_btn" role="group" aria-label="Basic outlined example">
+                          <button type="button" class="add_to_bag remove_btn"> - </button>
+                          <input disabled="" class="text-center" value="1">
+                          <button type="button" class="add_to_bag add_btn">+</button>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -3561,9 +3716,16 @@
                       <span>Smart Watch</span>
                       <a href="product-details.html" class="product-name">Waterproof Sport Smart Watch Monitor for ios & Android</a>
                       <h5>$2,013.54 </h5>
+                      
                       <div class="d-flex align-items-center justify-content-between buttons">
                         <button type="button" class="buy-now">Buy Now</button>
-                        <button type="button" class="add-to-cart">Add to cart</button>
+                        <button type="button" class="add-to-cart static_btn">Add to cart</button>
+
+                        <div class="btn-group counter_btn" role="group" aria-label="Basic outlined example">
+                          <button type="button" class="add_to_bag remove_btn"> - </button>
+                          <input disabled="" class="text-center" value="1">
+                          <button type="button" class="add_to_bag add_btn">+</button>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -3578,9 +3740,16 @@
                       <span>Smart Watch</span>
                       <a href="product-details.html" class="product-name">Waterproof Sport Smart Watch Monitor for ios & Android</a>
                       <h5>$2,013.54 </h5>
+                      
                       <div class="d-flex align-items-center justify-content-between buttons">
                         <button type="button" class="buy-now">Buy Now</button>
-                        <button type="button" class="add-to-cart">Add to cart</button>
+                        <button type="button" class="add-to-cart static_btn">Add to cart</button>
+
+                        <div class="btn-group counter_btn" role="group" aria-label="Basic outlined example">
+                          <button type="button" class="add_to_bag remove_btn"> - </button>
+                          <input disabled="" class="text-center" value="1">
+                          <button type="button" class="add_to_bag add_btn">+</button>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -3595,9 +3764,16 @@
                       <span>Smart Watch</span>
                       <a href="product-details.html" class="product-name">Waterproof Sport Smart Watch Monitor for ios & Android</a>
                       <h5>$2,013.54 </h5>
+                      
                       <div class="d-flex align-items-center justify-content-between buttons">
                         <button type="button" class="buy-now">Buy Now</button>
-                        <button type="button" class="add-to-cart">Add to cart</button>
+                        <button type="button" class="add-to-cart static_btn">Add to cart</button>
+
+                        <div class="btn-group counter_btn" role="group" aria-label="Basic outlined example">
+                          <button type="button" class="add_to_bag remove_btn"> - </button>
+                          <input disabled="" class="text-center" value="1">
+                          <button type="button" class="add_to_bag add_btn">+</button>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -3612,9 +3788,16 @@
                       <span>Smart Watch</span>
                       <a href="product-details.html" class="product-name">Waterproof Sport Smart Watch Monitor for ios & Android</a>
                       <h5>$2,013.54 </h5>
+                      
                       <div class="d-flex align-items-center justify-content-between buttons">
                         <button type="button" class="buy-now">Buy Now</button>
-                        <button type="button" class="add-to-cart">Add to cart</button>
+                        <button type="button" class="add-to-cart static_btn">Add to cart</button>
+
+                        <div class="btn-group counter_btn" role="group" aria-label="Basic outlined example">
+                          <button type="button" class="add_to_bag remove_btn"> - </button>
+                          <input disabled="" class="text-center" value="1">
+                          <button type="button" class="add_to_bag add_btn">+</button>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -3688,22 +3871,72 @@
                   <div class="colors">
                     <h5>Color</h5>
                     <ul class="d-flex align-items-center">
-                      <li><span class="black active"></span></li>
-                      <li><span class="grey"></span></li>
-                      <li><span class="silver"></span></li>
+                      <li>
+                        <label>
+                          <input type="radio" checked name="color">
+                          <span class="black"></span>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="radio" name="color">
+                          <span class="grey"></span>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="radio" name="color">
+                          <span class="silver"></span>
+                        </label>
+                      </li>
                     </ul>
                   </div>
 
                   <div class="sizes">
                     <h5>Size</h5>
                     <ul class="d-flex align-items-center">
-                      <li><span class="active">40</span></li>
-                      <li><span>41</span></li>
-                      <li><span>42</span></li>
-                      <li><span>43</span></li>
-                      <li><span class="disabled">44</span></li>
-                      <li><span>45</span></li>
-                      <li><span>46</span></li>
+                      <li>
+                        <label>
+                          <input type="radio" name="size" checked>
+                          <span>40</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="radio" name="size">
+                          <span>41</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="radio" name="size">
+                          <span>42</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="radio" name="size">
+                          <span>43</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="radio" name="size" disabled>
+                          <span>44</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="radio" name="size">
+                          <span>45</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label>
+                          <input type="radio" name="size">
+                          <span>46</span>
+                        </label>
+                      </li>
                       <li><button type="button">Size Chart</button></li>
                     </ul>
                   </div>

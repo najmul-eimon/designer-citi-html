@@ -71,6 +71,27 @@ single-product CSS
   font-size: 16px;
   color: var(--secondary);
 }
+.single-product .btn-group{
+  width: 130px;
+  border-radius: 6px;
+  background-color: var(--primary);
+  height: 36px;
+  display: none;
+}
+.single-product .btn-group .add_to_bag{
+  width: 40px;
+  height: 36px;
+  background-color: transparent;
+  color: var(--white);
+  font-size: 20px;
+}
+.single-product .btn-group input{
+  width: calc(100% - 80px);
+  background-color: transparent;
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 500;
+}
 
 @media screen and (max-width:767px) {
   .single-product {
@@ -171,6 +192,95 @@ single-product CSS
 }
 
 /*===========================================================
+related-product CSS
+=============================================================*/
+.related-product {
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  height: auto;
+  width: 100%;
+}
+
+.related-product .img {
+  height: 360px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fcfcfc;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.related-product .quick-view {
+  flex-grow: 1;
+  line-height: 40px;
+  background-color: #F8F8F8;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--secondary);
+  text-transform: capitalize;
+}
+
+.related-product .quick-view:hover {
+  background-color: var(--secondary);
+  color: var(--white);
+}
+
+.related-product .add-to-fav {
+  height: 40px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F8F8F8;
+  flex-shrink: 0;
+}
+
+.related-product .add-to-fav svg {
+  height: 26px;
+  width: 26px;
+}
+
+.related-product .add-to-fav.active {
+  transform: rotate(0);
+}
+
+.related-product .add-to-fav.active svg path {
+  fill: var(--primary);
+  stroke: var(--primary)
+}
+
+.related-product .names {
+  padding: 8px 16px;
+}
+
+.related-product span {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--secondary);
+}
+
+.related-product .product-name {
+  padding-bottom: 4px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgba(57, 61, 79, 0.6);
+}
+
+.related-product p {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: var(--secondary);
+}
+
+/*===========================================================
 product details modal CSS
 =============================================================*/
 .product-modal .modal-dialog {
@@ -216,7 +326,8 @@ product details modal CSS
   padding-left: 70px;
   padding-top: 40px;
 }
-.product-description .main-feature{
+
+.product-description .main-feature {
   padding-right: 100px;
 }
 
@@ -278,9 +389,17 @@ product details modal CSS
   width: 36px;
   border-radius: 50%;
   border: 5px solid var(--white);
+  cursor: pointer;
+}
+.product-description .colors ul li input,
+.product-description .sizes ul li input{
+  position: absolute;
+  height: 0;
+  width: 0;
+  opacity: 0;
 }
 
-.product-description .colors ul li span.active {
+.product-description .colors ul li input:checked + span{
   border-color: rgba(255, 255, 255, 0.8);
 }
 
@@ -315,15 +434,16 @@ product details modal CSS
   border-radius: 50%;
   border: 1px solid rgba(115, 113, 252, 0.15);
   text-align: center;
+  cursor: pointer;
 }
 
-.product-description .sizes ul li span.active {
+.product-description .sizes ul li input:checked + span {
   color: var(--white);
   border-color: var(--primary);
   background-color: var(--primary);
 }
 
-.product-description .sizes ul li span.disabled {
+.product-description .sizes ul li input:disabled + span {
   color: rgba(0, 0, 0, 0.4);
 }
 
@@ -336,17 +456,21 @@ product details modal CSS
   border-radius: 5px;
   background-color: rgba(115, 113, 252, 0.05);
 }
-.product-description .buttons{
+
+.product-description .buttons {
   padding-top: 40px;
 }
-.product-description .buttons .add-to-fav{
+
+.product-description .buttons .add-to-fav {
   margin-right: 67px;
 }
+
 .product-description .buttons .add-to-fav svg path {
   stroke: var(--red);
 }
+
 .product-description .buttons .buy-now,
-.product-description .buttons .add-to-cart{
+.product-description .buttons .add-to-cart {
   width: 160px;
   text-align: center;
   padding: 6px 0;
@@ -357,19 +481,22 @@ product details modal CSS
   font-size: 16px;
   font-weight: 500;
 }
-.product-description .buttons .add-to-cart{
+
+.product-description .buttons .add-to-cart {
   background-color: var(--primary);
   color: var(--white);
   margin-left: 16px;
 }
-.product-description .buttons .full-product-view{
+
+.product-description .buttons .full-product-view {
   margin-top: 16px;
   font-size: 14px;
   font-weight: 500;
   text-decoration: underline;
   color: var(--primary);
 }
-.product-description .desc{
+
+.product-description .desc {
   padding-top: 40px;
   color: #666;
   font-size: 16px;

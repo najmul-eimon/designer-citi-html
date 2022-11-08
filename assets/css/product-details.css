@@ -120,6 +120,7 @@ related product CSS
 =============================================================*/
 .related-products{
   padding: 40px 0;
+  margin-bottom: 58px;
 }
 .related-products .title{
   padding-bottom: 40px;

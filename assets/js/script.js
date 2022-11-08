@@ -83,21 +83,24 @@ $(function(){
           slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
-          dots: true
+          dots: true,
+          arrows:false
         }
       },
       {
         breakpoint: 600,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          arrows:false
         }
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          arrows:false
         }
       }
     ]
@@ -324,6 +327,35 @@ $productThumbs.slick({
     });
 
 
+  /*================================================================
+    single product add to cart counter
+  =================================================================*/
+    // Script for product counter buttons
+    $(".static_btn").click(function(){
+      $(this).css({"display":"none"});
+      $(this).parent().parent().parent().find(".counter_btn").css({"display":"flex","justify-content":"space-between"});
+      $(this).parent().parent().parent().find("input").val(1);
+    });
+
+    // input spinner
+    $(".add_btn").click(function(){
+      let $current_val = parseInt($(this).parent().parent().parent().find("input").val());
+     
+      let $update_val = $current_val + 1;
+      $(this).parent().parent().parent().find("input").val($update_val);
+    });
   
+    $(".remove_btn").click(function(){
+        let $current_val = parseInt($(this).parent().parent().parent().find("input").val());
+      
+        let $update_val = $current_val - 1;
+        $(this).parent().parent().parent().find("input").val($update_val);
+    
+        if($update_val < 1){
+            $(this).parent().parent().parent().find(".counter_btn").css({"display":"none"});
+            $(this).parent().parent().parent().find(".static_btn").css({"display":"block"});
+        }
+    });
+
 
 });

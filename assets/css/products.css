@@ -286,26 +286,6 @@ products CSS
   color: rgba(57, 61, 79, 0.2);
 }
 
-.custom-scrollbar::-webkit-scrollbar {
-  width: 7px;
-}
-.custom-scrollbar::-moz-scrollbar {
-  width: 7px;
-}
-
-.custom-scrollbar::-webkit-scrollbar-track {
-  background-color: #F4F4F4;
-}
-.custom-scrollbar::-moz-scrollbar-track {
-  background-color: #F4F4F4;
-}
- 
-.custom-scrollbar::-webkit-scrollbar-thumb {
-  background: #100F0F; 
-}
-.custom-scrollbar::-moz-scrollbar-thumb {
-  background: #100F0F; 
-}
 
 
 .products .load-more{
