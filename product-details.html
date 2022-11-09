@@ -50,8 +50,8 @@
       </section>
       <!-- top-bar end -->
 
-      <!-- search-bar start -->
-      <section class="search-bar">
+      <!-- mid-bar start -->
+      <section class="mid-bar">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-md-2">
@@ -209,7 +209,7 @@
           </div>
         </div>
       </section>
-      <!-- search-bar end -->
+      <!-- mid-bar end -->
 
       <section>
         <!-- menu-bar start -->
@@ -3137,13 +3137,212 @@
         </div>
       </div>
       <!-- mobile category end -->
+
+      <!-- mobile search start -->
+      <div class="mobile_search mobile_menu_content">
+        <div class="container">
+          <div class="input-group search_bar">
+            <input type="text" class="form-control" aria-label="Text input with 2 dropdown buttons"
+              placeholder="I'm Looking for..." />
+            <button class="btn btn-outline-secondary search_btn" type="button" id="button-addon2">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M11.2734 19.25C15.6227 19.25 19.1484 15.7242 19.1484 11.375C19.1484 7.02576 15.6227 3.5 11.2734 3.5C6.9242 3.5 3.39844 7.02576 3.39844 11.375C3.39844 15.7242 6.9242 19.25 11.2734 19.25Z"
+                  stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M18.3984 18.5L21.3984 21.5" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+          <h3>Search in:</h3>
+          <div class="search_tags">
+            <a class="tag_btn" href="#">All Categories</a>
+            <a class="tag_btn" href="#">Food</a>
+            <a class="tag_btn" href="#">Beauty Products</a>
+            <a class="tag_btn" href="#">Baby Food</a>
+            <a class="tag_btn" href="#">Stationary</a>
+            <a class="tag_btn" href="#">Stationary for Office</a>
+            <a class="tag_btn" href="#">Savlon</a>
+            <a class="tag_btn" href="#">Beverage</a>
+          </div>
+        </div>
+      </div>
+      <!-- mobile search end -->
+
+      <!-- mobile cart start -->
+      <div class="mobile_cart mobile_menu_content">
+        <div class="items_no text-center">
+          <h2>3 ITEMS</h2>
+        </div>
+  
+        <div class="menu_content_heading">
+          <div class="container d-flex align-items-center justify-content-between">
+            <h4>Selected Item</h4>
+            <div class="cus_menu">
+              <a role="button" class="btn btn-outline-primary btn-sm add_item" data-action="mobile_cat">
+                <svg width="15" height="15" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3.125 10H16.875" stroke="#7371FC" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M10 3.125V16.875" stroke="#7371FC" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                Add Item</a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="container">
+          <ul class="selected-cart-items custom-scrollbar">
+            <li class="carted_items d-flex justify-content-around align-items-center">
+              <button type="button"><i class="ph-x"></i></button>
+
+              <div class="carted_image">
+                <img src="assets/images/featured/img1.png" class="img-fluid" alt="" />
+              </div>
+
+              <div class="carted_item_name d-flex flex-column justify-content-between">
+                <h3>Tee-shirt ZEUS Réflective – Blanc</h3>
+                <p class="item_quantity">250gm</p>
+              </div>
+
+              <div class="cart_counter d-flex flex-column justify-content-between align-items-end">
+                <div class="btn-group" role="group" aria-label="Basic outlined example">
+                  <button type="button" class="btn">-</button>
+                  <input disabled class="form-control text-center" value="1" type="text" readonly />
+                  <button type="button" class="btn">+</button>
+                </div>
+
+                <p class="item_price">
+                  <span>BDT </span> <span class="single_price">200</span>
+                </p>
+              </div>
+            </li>
+            <li class="carted_items d-flex justify-content-around align-items-center">
+              <button type="button"><i class="ph-x"></i></button>
+
+              <div class="carted_image">
+                <img src="assets/images/featured/img2.png" class="img-fluid" alt="" />
+              </div>
+
+              <div class="carted_item_name d-flex flex-column justify-content-between">
+                <h3>Tee-shirt ZEUS Réflective – Blanc</h3>
+                <p class="item_quantity">250gm</p>
+              </div>
+
+              <div class="cart_counter d-flex flex-column justify-content-between align-items-end">
+                <div class="btn-group" role="group" aria-label="Basic outlined example">
+                  <button type="button" class="btn">-</button>
+                  <input disabled class="form-control text-center" value="1" type="text" readonly />
+                  <button type="button" class="btn">+</button>
+                </div>
+
+                <p class="item_price">
+                  <span>BDT </span> <span class="single_price">200</span>
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+  
+        <div class="mobile_place_order">
+          <button class="place_order">Place Order</button>
+          <button><span>BDT </span> 423</button>
+        </div>
+      </div>
+      <!-- mobile cart end -->
+
+      <!-- mobile favourite start -->
+      <div class="mobile_favourite mobile_menu_content">
+        <div class="container">
+          <div class="mob_fav_items">
+            <div class="row">
+              <div class="col-sm-6 col-md-4">
+                <div class="single-product position-relative">
+                  <button type="button" class="add-to-fav">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
+                  </button>
+                  <div class="product-image img">
+                    <img src="assets/images/featured/img1.png" alt="">
+                  </div>
+                  <span>Smart Watch</span>
+                  <a href="product-details.html" class="product-name">Waterproof Sport Smart Watch Monitor for ios & Android</a>
+                  <h5>$2,013.54 </h5>
+
+                  <div class="d-flex align-items-center justify-content-between buttons">
+                    <button type="button" class="buy-now">Buy Now</button>
+                    <button type="button" class="add-to-cart static_btn">Add to cart</button>
+
+                    <div class="btn-group counter_btn" role="group" aria-label="Basic outlined example">
+                      <button type="button" class="add_to_bag remove_btn"> - </button>
+                      <input disabled="" class="text-center" value="1">
+                      <button type="button" class="add_to_bag add_btn">+</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-sm-6 col-md-4">
+                <div class="single-product position-relative">
+                  <button type="button" class="add-to-fav">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
+                  </button>
+                  <div class="product-image img">
+                    <img src="assets/images/featured/img1.png" alt="">
+                  </div>
+                  <span>Smart Watch</span>
+                  <a href="product-details.html" class="product-name">Waterproof Sport Smart Watch Monitor for ios & Android</a>
+                  <h5>$2,013.54 </h5>
+
+                  <div class="d-flex align-items-center justify-content-between buttons">
+                    <button type="button" class="buy-now">Buy Now</button>
+                    <button type="button" class="add-to-cart static_btn">Add to cart</button>
+
+                    <div class="btn-group counter_btn" role="group" aria-label="Basic outlined example">
+                      <button type="button" class="add_to_bag remove_btn"> - </button>
+                      <input disabled="" class="text-center" value="1">
+                      <button type="button" class="add_to_bag add_btn">+</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-sm-6 col-md-4">
+                <div class="single-product position-relative">
+                  <button type="button" class="add-to-fav">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
+                  </button>
+                  <div class="product-image img">
+                    <img src="assets/images/featured/img1.png" alt="">
+                  </div>
+                  <span>Smart Watch</span>
+                  <a href="product-details.html" class="product-name">Waterproof Sport Smart Watch Monitor for ios & Android</a>
+                  <h5>$2,013.54 </h5>
+
+                  <div class="d-flex align-items-center justify-content-between buttons">
+                    <button type="button" class="buy-now">Buy Now</button>
+                    <button type="button" class="add-to-cart static_btn">Add to cart</button>
+
+                    <div class="btn-group counter_btn" role="group" aria-label="Basic outlined example">
+                      <button type="button" class="add_to_bag remove_btn"> - </button>
+                      <input disabled="" class="text-center" value="1">
+                      <button type="button" class="add_to_bag add_btn">+</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- mobile favourite end -->
+
     </section>
     <!-- mobile header end -->
 
     <!-- mobile-menu start -->
     <section class="mobile_menu d-flex align-items-center justify-content-between">
       <div class="mob_menu_item">
-        <a data-action="home" role="button">
+        <a href="index.html" data-action="home" role="button">
           <img src="assets/images/svg/home.svg" alt="" />
           Home
         </a>
@@ -3172,6 +3371,7 @@
       </div>
     </section>
     <!-- mobile-menu end -->
+
   </header>
   <!-- header end -->
 
@@ -3331,7 +3531,7 @@
               <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
                   <div class="row">
-                    <div class="col-md-7">
+                    <div class="col-md-6 col-lg-7">
                       <div class="desc-text">
                         <h4>Description:</h4>
                         <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est
@@ -3352,7 +3552,7 @@
                       </div>
                     </div>
 
-                    <div class="col-md-5">
+                    <div class="col-md-6 col-lg-5">
                       <div class="product-desc-slider position-relative">
                         <div class="item">
                           <img src="assets/images/product-details/img-big.png" alt="">
@@ -3369,7 +3569,7 @@
                 </div>
                 <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
                   <div class="row">
-                    <div class="col-md-7">
+                    <div class="col-md-6 col-lg-7">
                       <div class="desc-text">
                         <h4>Description:</h4>
                         <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est
@@ -3390,7 +3590,7 @@
                       </div>
                     </div>
 
-                    <div class="col-md-5">
+                    <div class="col-md-6 col-lg-5">
                       <div class="product-desc-slider position-relative">
                         <div class="item">
                           <img src="assets/images/product-details/img-big.png" alt="">
@@ -3407,7 +3607,7 @@
                 </div>
                 <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
                   <div class="row">
-                    <div class="col-md-7">
+                    <div class="col-md-6 col-lg-7">
                       <div class="desc-text">
                         <h4>Description:</h4>
                         <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est
@@ -3428,7 +3628,7 @@
                       </div>
                     </div>
 
-                    <div class="col-md-5">
+                    <div class="col-md-6 col-lg-5">
                       <div class="product-desc-slider position-relative">
                         <div class="item">
                           <img src="assets/images/product-details/img-big.png" alt="">
@@ -3461,76 +3661,92 @@
             </div>
           </div>
           <div class="col-md-12">
-            <div class="row">
-              <div class="col-md-3">
-                <div class="related-product">
-                  <div class="img">
-                    <img src="assets/images/featured/watch1.png" alt="">
-                  </div>
-                  <div class="all-btns d-flex align-items-center">
-                    <button type="button" class="quick-view product-image">quick view</button>
-                    <button type="button" class="add-to-fav">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
-                    </button>
-                  </div>
-                  <div class="names">
-                    <span>NIKE</span>
-                    <a href="#" class="product-name">Chamuera ML Jacket Men</a>
-                    <p>$2,013.54</p>
+            <div class="related-product-slider">
+              <div class="single-product position-relative">
+                <button type="button" class="add-to-fav">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
+                </button>
+                <div class="product-image img">
+                  <img src="assets/images/featured/img1.png" alt="">
+                </div>
+                <span>Smart Watch</span>
+                <a href="product-details.html" class="product-name">Waterproof Sport Smart Watch Monitor for ios & Android</a>
+                <h5>$2,013.54 </h5>
+
+                <div class="d-flex align-items-center justify-content-between buttons">
+                  <button type="button" class="buy-now">Buy Now</button>
+                  <button type="button" class="add-to-cart static_btn">Add to cart</button>
+
+                  <div class="btn-group counter_btn" role="group" aria-label="Basic outlined example">
+                    <button type="button" class="add_to_bag remove_btn"> - </button>
+                    <input disabled="" class="text-center" value="1">
+                    <button type="button" class="add_to_bag add_btn">+</button>
                   </div>
                 </div>
               </div>
-              <div class="col-md-3">
-                <div class="related-product">
-                  <div class="img">
-                    <img src="assets/images/featured/watch1.png" alt="">
-                  </div>
-                  <div class="all-btns d-flex align-items-center">
-                    <button type="button" class="quick-view product-image">quick view</button>
-                    <button type="button" class="add-to-fav">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
-                    </button>
-                  </div>
-                  <div class="names">
-                    <span>NIKE</span>
-                    <a href="#" class="product-name">Chamuera ML Jacket Men</a>
-                    <p>$2,013.54</p>
+              <div class="single-product position-relative">
+                <button type="button" class="add-to-fav">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
+                </button>
+                <div class="product-image img">
+                  <img src="assets/images/featured/img2.png" alt="">
+                </div>
+                <span>Smart Watch</span>
+                <a href="product-details.html" class="product-name">Waterproof Sport Smart Watch Monitor for ios & Android</a>
+                <h5>$2,013.54 </h5>
+
+                <div class="d-flex align-items-center justify-content-between buttons">
+                  <button type="button" class="buy-now">Buy Now</button>
+                  <button type="button" class="add-to-cart static_btn">Add to cart</button>
+
+                  <div class="btn-group counter_btn" role="group" aria-label="Basic outlined example">
+                    <button type="button" class="add_to_bag remove_btn"> - </button>
+                    <input disabled="" class="text-center" value="1">
+                    <button type="button" class="add_to_bag add_btn">+</button>
                   </div>
                 </div>
               </div>
-              <div class="col-md-3">
-                <div class="related-product">
-                  <div class="img">
-                    <img src="assets/images/featured/watch2.png" alt="">
-                  </div>
-                  <div class="all-btns d-flex align-items-center">
-                    <button type="button" class="quick-view product-image">quick view</button>
-                    <button type="button" class="add-to-fav">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
-                    </button>
-                  </div>
-                  <div class="names">
-                    <span>NIKE</span>
-                    <a href="#" class="product-name">Chamuera ML Jacket Men</a>
-                    <p>$2,013.54</p>
+              <div class="single-product position-relative">
+                <button type="button" class="add-to-fav">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
+                </button>
+                <div class="product-image img">
+                  <img src="assets/images/featured/img1.png" alt="">
+                </div>
+                <span>Smart Watch</span>
+                <a href="product-details.html" class="product-name">Waterproof Sport Smart Watch Monitor for ios & Android</a>
+                <h5>$2,013.54 </h5>
+
+                <div class="d-flex align-items-center justify-content-between buttons">
+                  <button type="button" class="buy-now">Buy Now</button>
+                  <button type="button" class="add-to-cart static_btn">Add to cart</button>
+
+                  <div class="btn-group counter_btn" role="group" aria-label="Basic outlined example">
+                    <button type="button" class="add_to_bag remove_btn"> - </button>
+                    <input disabled="" class="text-center" value="1">
+                    <button type="button" class="add_to_bag add_btn">+</button>
                   </div>
                 </div>
               </div>
-              <div class="col-md-3">
-                <div class="related-product">
-                  <div class="img">
-                    <img src="assets/images/featured/watch3.png" alt="">
-                  </div>
-                  <div class="all-btns d-flex align-items-center">
-                    <button type="button" class="quick-view product-image">quick view</button>
-                    <button type="button" class="add-to-fav">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
-                    </button>
-                  </div>
-                  <div class="names">
-                    <span>NIKE</span>
-                    <a href="#" class="product-name">Chamuera ML Jacket Men</a>
-                    <p>$2,013.54</p>
+              <div class="single-product position-relative">
+                <button type="button" class="add-to-fav">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
+                </button>
+                <div class="product-image img">
+                  <img src="assets/images/featured/img3.png" alt="">
+                </div>
+                <span>Smart Watch</span>
+                <a href="product-details.html" class="product-name">Waterproof Sport Smart Watch Monitor for ios & Android</a>
+                <h5>$2,013.54 </h5>
+
+                <div class="d-flex align-items-center justify-content-between buttons">
+                  <button type="button" class="buy-now">Buy Now</button>
+                  <button type="button" class="add-to-cart static_btn">Add to cart</button>
+
+                  <div class="btn-group counter_btn" role="group" aria-label="Basic outlined example">
+                    <button type="button" class="add_to_bag remove_btn"> - </button>
+                    <input disabled="" class="text-center" value="1">
+                    <button type="button" class="add_to_bag add_btn">+</button>
                   </div>
                 </div>
               </div>
@@ -3671,7 +3887,7 @@
                     <button type="button" class="add-to-fav">
                       <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
                     </button>
-                    <div class="text-center">
+                    <div class="text-center btns">
                       <div class="d-flex align-items-center">
                         <button type="button" class="buy-now">Buy Now</button>
                         <button type="button" class="add-to-cart">Add to cart</button>

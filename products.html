@@ -50,8 +50,8 @@
       </section>
       <!-- top-bar end -->
 
-      <!-- search-bar start -->
-      <section class="search-bar">
+      <!-- mid-bar start -->
+      <section class="mid-bar">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-md-2">
@@ -209,7 +209,7 @@
           </div>
         </div>
       </section>
-      <!-- search-bar end -->
+      <!-- mid-bar end -->
 
       <section>
         <!-- menu-bar start -->
@@ -3137,13 +3137,212 @@
         </div>
       </div>
       <!-- mobile category end -->
+
+      <!-- mobile search start -->
+      <div class="mobile_search mobile_menu_content">
+        <div class="container">
+          <div class="input-group search_bar">
+            <input type="text" class="form-control" aria-label="Text input with 2 dropdown buttons"
+              placeholder="I'm Looking for..." />
+            <button class="btn btn-outline-secondary search_btn" type="button" id="button-addon2">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M11.2734 19.25C15.6227 19.25 19.1484 15.7242 19.1484 11.375C19.1484 7.02576 15.6227 3.5 11.2734 3.5C6.9242 3.5 3.39844 7.02576 3.39844 11.375C3.39844 15.7242 6.9242 19.25 11.2734 19.25Z"
+                  stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M18.3984 18.5L21.3984 21.5" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+          <h3>Search in:</h3>
+          <div class="search_tags">
+            <a class="tag_btn" href="#">All Categories</a>
+            <a class="tag_btn" href="#">Food</a>
+            <a class="tag_btn" href="#">Beauty Products</a>
+            <a class="tag_btn" href="#">Baby Food</a>
+            <a class="tag_btn" href="#">Stationary</a>
+            <a class="tag_btn" href="#">Stationary for Office</a>
+            <a class="tag_btn" href="#">Savlon</a>
+            <a class="tag_btn" href="#">Beverage</a>
+          </div>
+        </div>
+      </div>
+      <!-- mobile search end -->
+
+      <!-- mobile cart start -->
+      <div class="mobile_cart mobile_menu_content">
+        <div class="items_no text-center">
+          <h2>3 ITEMS</h2>
+        </div>
+  
+        <div class="menu_content_heading">
+          <div class="container d-flex align-items-center justify-content-between">
+            <h4>Selected Item</h4>
+            <div class="cus_menu">
+              <a role="button" class="btn btn-outline-primary btn-sm add_item" data-action="mobile_cat">
+                <svg width="15" height="15" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3.125 10H16.875" stroke="#7371FC" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M10 3.125V16.875" stroke="#7371FC" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                Add Item</a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="container">
+          <ul class="selected-cart-items custom-scrollbar">
+            <li class="carted_items d-flex justify-content-around align-items-center">
+              <button type="button"><i class="ph-x"></i></button>
+
+              <div class="carted_image">
+                <img src="assets/images/featured/img1.png" class="img-fluid" alt="" />
+              </div>
+
+              <div class="carted_item_name d-flex flex-column justify-content-between">
+                <h3>Tee-shirt ZEUS Réflective – Blanc</h3>
+                <p class="item_quantity">250gm</p>
+              </div>
+
+              <div class="cart_counter d-flex flex-column justify-content-between align-items-end">
+                <div class="btn-group" role="group" aria-label="Basic outlined example">
+                  <button type="button" class="btn">-</button>
+                  <input disabled class="form-control text-center" value="1" type="text" readonly />
+                  <button type="button" class="btn">+</button>
+                </div>
+
+                <p class="item_price">
+                  <span>BDT </span> <span class="single_price">200</span>
+                </p>
+              </div>
+            </li>
+            <li class="carted_items d-flex justify-content-around align-items-center">
+              <button type="button"><i class="ph-x"></i></button>
+
+              <div class="carted_image">
+                <img src="assets/images/featured/img2.png" class="img-fluid" alt="" />
+              </div>
+
+              <div class="carted_item_name d-flex flex-column justify-content-between">
+                <h3>Tee-shirt ZEUS Réflective – Blanc</h3>
+                <p class="item_quantity">250gm</p>
+              </div>
+
+              <div class="cart_counter d-flex flex-column justify-content-between align-items-end">
+                <div class="btn-group" role="group" aria-label="Basic outlined example">
+                  <button type="button" class="btn">-</button>
+                  <input disabled class="form-control text-center" value="1" type="text" readonly />
+                  <button type="button" class="btn">+</button>
+                </div>
+
+                <p class="item_price">
+                  <span>BDT </span> <span class="single_price">200</span>
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+  
+        <div class="mobile_place_order">
+          <button class="place_order">Place Order</button>
+          <button><span>BDT </span> 423</button>
+        </div>
+      </div>
+      <!-- mobile cart end -->
+
+      <!-- mobile favourite start -->
+      <div class="mobile_favourite mobile_menu_content">
+        <div class="container">
+          <div class="mob_fav_items">
+            <div class="row">
+              <div class="col-sm-6 col-md-4">
+                <div class="single-product position-relative">
+                  <button type="button" class="add-to-fav">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
+                  </button>
+                  <div class="product-image img">
+                    <img src="assets/images/featured/img1.png" alt="">
+                  </div>
+                  <span>Smart Watch</span>
+                  <a href="product-details.html" class="product-name">Waterproof Sport Smart Watch Monitor for ios & Android</a>
+                  <h5>$2,013.54 </h5>
+
+                  <div class="d-flex align-items-center justify-content-between buttons">
+                    <button type="button" class="buy-now">Buy Now</button>
+                    <button type="button" class="add-to-cart static_btn">Add to cart</button>
+
+                    <div class="btn-group counter_btn" role="group" aria-label="Basic outlined example">
+                      <button type="button" class="add_to_bag remove_btn"> - </button>
+                      <input disabled="" class="text-center" value="1">
+                      <button type="button" class="add_to_bag add_btn">+</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-sm-6 col-md-4">
+                <div class="single-product position-relative">
+                  <button type="button" class="add-to-fav">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
+                  </button>
+                  <div class="product-image img">
+                    <img src="assets/images/featured/img1.png" alt="">
+                  </div>
+                  <span>Smart Watch</span>
+                  <a href="product-details.html" class="product-name">Waterproof Sport Smart Watch Monitor for ios & Android</a>
+                  <h5>$2,013.54 </h5>
+
+                  <div class="d-flex align-items-center justify-content-between buttons">
+                    <button type="button" class="buy-now">Buy Now</button>
+                    <button type="button" class="add-to-cart static_btn">Add to cart</button>
+
+                    <div class="btn-group counter_btn" role="group" aria-label="Basic outlined example">
+                      <button type="button" class="add_to_bag remove_btn"> - </button>
+                      <input disabled="" class="text-center" value="1">
+                      <button type="button" class="add_to_bag add_btn">+</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-sm-6 col-md-4">
+                <div class="single-product position-relative">
+                  <button type="button" class="add-to-fav">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
+                  </button>
+                  <div class="product-image img">
+                    <img src="assets/images/featured/img1.png" alt="">
+                  </div>
+                  <span>Smart Watch</span>
+                  <a href="product-details.html" class="product-name">Waterproof Sport Smart Watch Monitor for ios & Android</a>
+                  <h5>$2,013.54 </h5>
+
+                  <div class="d-flex align-items-center justify-content-between buttons">
+                    <button type="button" class="buy-now">Buy Now</button>
+                    <button type="button" class="add-to-cart static_btn">Add to cart</button>
+
+                    <div class="btn-group counter_btn" role="group" aria-label="Basic outlined example">
+                      <button type="button" class="add_to_bag remove_btn"> - </button>
+                      <input disabled="" class="text-center" value="1">
+                      <button type="button" class="add_to_bag add_btn">+</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- mobile favourite end -->
+
     </section>
     <!-- mobile header end -->
 
     <!-- mobile-menu start -->
     <section class="mobile_menu d-flex align-items-center justify-content-between">
       <div class="mob_menu_item">
-        <a data-action="home" role="button">
+        <a href="index.html" data-action="home" role="button">
           <img src="assets/images/svg/home.svg" alt="" />
           Home
         </a>
@@ -3213,12 +3412,33 @@
                   <li><a class="dropdown-item filter-item2" href="#">Price- High to Low</a></li>
                 </ul>
               </div>  
+              <button type="button" class="filter-btn">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10 8.4375V16.875" stroke="#393D4F" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M10 3.125V5.3125" stroke="#393D4F" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M10 8.4375C10.8629 8.4375 11.5625 7.73794 11.5625 6.875C11.5625 6.01206 10.8629 5.3125 10 5.3125C9.13706 5.3125 8.4375 6.01206 8.4375 6.875C8.4375 7.73794 9.13706 8.4375 10 8.4375Z" stroke="#393D4F" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M15.625 14.6875V16.875" stroke="#393D4F" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M15.625 3.125V11.5625" stroke="#393D4F" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M15.625 14.6875C16.4879 14.6875 17.1875 13.9879 17.1875 13.125C17.1875 12.2621 16.4879 11.5625 15.625 11.5625C14.7621 11.5625 14.0625 12.2621 14.0625 13.125C14.0625 13.9879 14.7621 14.6875 15.625 14.6875Z" stroke="#393D4F" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M4.375 12.1875V16.875" stroke="#393D4F" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M4.375 3.125V9.0625" stroke="#393D4F" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M4.375 12.1875C5.23794 12.1875 5.9375 11.4879 5.9375 10.625C5.9375 9.76206 5.23794 9.0625 4.375 9.0625C3.51206 9.0625 2.8125 9.76206 2.8125 10.625C2.8125 11.4879 3.51206 12.1875 4.375 12.1875Z" stroke="#393D4F" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                Filters               
+              </button>
             </div>
           </div>
 
           <div class="col-md-12 filtered-products">
             <div class="row">
-              <div class="col-md-3">
+              <div class="col-lg-4 col-xxl-3 filter-action">
+
+                <!-- mobile title -->
+                <div class="mobile-title text-center">
+                  <h3>Filters</h3>
+                  <p>Watch <span>(759 items)</span></p>
+                </div>
+
                 <div class="accordion" id="accordionExample">
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="headingOne">
@@ -3238,6 +3458,7 @@
                       </div>
                     </div>
                   </div>
+
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="headingTwo">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -3307,6 +3528,7 @@
                       </div>
                     </div>
                   </div>
+
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="headingThree">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -3376,6 +3598,7 @@
                       </div>
                     </div>
                   </div>
+
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="headingFour">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
@@ -3435,6 +3658,7 @@
                       </div>
                     </div>
                   </div>
+
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="headingFive">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
@@ -3444,7 +3668,10 @@
                     <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
                       <div class="accordion-body">
                         <div class="refine-category">
-
+                          <label class="position-relative input-search-label">
+                            <input type="text" placeholder="search" class="input-search">
+                            <i class="ph-magnifying-glass"></i>
+                          </label>
                           <ul class="custom-scrollbar">
                             <li>
                               <label class="check-container">
@@ -3493,6 +3720,7 @@
                       </div>
                     </div>
                   </div>
+
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="headingSix">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
@@ -3509,11 +3737,17 @@
                     </div>
                   </div>
                 </div>
+
+                <!-- mobile buttons -->
+                <div class="d-flex align-items-center filter-panel-btns">
+                  <button type="button" class="cancel filter-panel-btn">Cancel</button>
+                  <button type="button" class="done filter-panel-btn">DONE</button>
+                </div>
               </div>
 
-              <div class="col-md-9">
+              <div class="col-lg-8 col-xxl-9">
                 <div class="row gy-4">
-                  <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                  <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-4">
                     <div class="single-product position-relative">
                       <button type="button" class="add-to-fav">
                         <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
@@ -3537,7 +3771,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                  <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-4">
                     <div class="single-product position-relative">
                       <button type="button" class="add-to-fav">
                         <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
@@ -3561,7 +3795,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                  <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-4">
                     <div class="single-product position-relative">
                       <button type="button" class="add-to-fav">
                         <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
@@ -3585,7 +3819,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                  <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-4">
                     <div class="single-product position-relative">
                       <button type="button" class="add-to-fav">
                         <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
@@ -3609,7 +3843,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                  <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-4">
                     <div class="single-product position-relative">
                       <button type="button" class="add-to-fav">
                         <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
@@ -3633,7 +3867,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                  <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-4">
                     <div class="single-product position-relative">
                       <button type="button" class="add-to-fav">
                         <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
@@ -3657,7 +3891,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                  <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-4">
                     <div class="single-product position-relative">
                       <button type="button" class="add-to-fav">
                         <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
@@ -3681,7 +3915,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                  <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-4">
                     <div class="single-product position-relative">
                       <button type="button" class="add-to-fav">
                         <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
@@ -3705,7 +3939,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                  <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-4">
                     <div class="single-product position-relative">
                       <button type="button" class="add-to-fav">
                         <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
@@ -3729,7 +3963,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                  <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-4">
                     <div class="single-product position-relative">
                       <button type="button" class="add-to-fav">
                         <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
@@ -3753,7 +3987,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                  <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-4">
                     <div class="single-product position-relative">
                       <button type="button" class="add-to-fav">
                         <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
@@ -3777,7 +4011,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                  <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-4">
                     <div class="single-product position-relative">
                       <button type="button" class="add-to-fav">
                         <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
@@ -3945,7 +4179,7 @@
                     <button type="button" class="add-to-fav">
                       <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
                     </button>
-                    <div class="text-center">
+                    <div class="text-center btns">
                       <div class="d-flex align-items-center">
                         <button type="button" class="buy-now">Buy Now</button>
                         <button type="button" class="add-to-cart">Add to cart</button>

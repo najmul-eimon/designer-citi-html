@@ -115,6 +115,91 @@ product details CSS
   background-color: var(--primary);
 }
 
+@media screen and (max-width:767px) {
+  .product-details .product-details-wrapper {
+    padding: 0;
+  }
+  .product-details .product-description{
+    text-align: center;
+  }
+  .product-details .product-description .price {
+    align-items: center !important;
+  }
+  .product-details .product-description .colors ul ,
+  .product-details .product-description .sizes ul {
+    justify-content: center;
+  }
+  .product-details .product-description .buttons {
+    justify-content: center !important;
+  }
+  .details-description {
+    padding-top: 40px;
+  }
+  .details-description .nav-tabs .nav-item {
+    width: calc(33% - 4px);
+  }
+  .details-description .nav-tabs .nav-link {
+    padding: 0;
+    width: 100%;
+    height: 42px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .details-description .tab-content .tab-pane {
+    padding: 0;
+  }
+  .details-description .desc-text {
+    padding-right: 0;
+  }
+  .details-description .desc-text ul li {
+    width: 100%;
+    font-size: 14px;
+    line-height: 24px;
+    padding-left: 22px;
+  }
+  .details-description .desc-text ul li:not(:last-child) {
+    margin-bottom: 12px;
+  }
+  .details-description .product-desc-slider{
+    margin-top: 24px;
+  }
+  .details-description .product-desc-slider .item {
+    height: 288px;
+  }
+}
+@media (min-width:768px) and (max-width:1199px) {
+  .product-details .product-details-wrapper {
+    padding: 40px 0;
+  }
+  .details-description .tab-content .tab-pane {
+    padding: 0;
+  }
+  .details-description .desc-text {
+    padding-right: 0;
+  }
+  .details-description .desc-text ul li {
+    width: 100%;
+    font-size: 14px;
+    line-height: 24px;
+    padding-left: 22px;
+  }
+  .details-description .desc-text ul li:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}
+@media (min-width:992px) and (max-width:1199px) {
+  .product-thumb .slick-slide {
+    height: 60px;
+  }
+}
+@media (min-width:1200px) and (max-width:1399px) {
+  .product-thumb .slick-slide {
+    height: 80px;
+  }
+  .product-details .product-details-wrapper {
+    padding: 40px 0;
+  }
+}
 /*===========================================================
 related product CSS
 =============================================================*/
@@ -129,4 +214,23 @@ related product CSS
   font-size: 32px;
   font-weight: 700;
   color: var(--black);
+}
+.related-products .slick-track{
+  padding: 10px 0;
+}
+.related-products .slick-slide{
+  margin: 0 8px;
+}
+.related-products .slick-slide img{
+  margin: auto;
+}
+
+@media screen and (max-width:767px) {
+  .related-products .title{
+    padding-bottom: 24px;
+  }
+  .related-products .title h2{
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

@@ -29,6 +29,18 @@ $(function(){
   });
 
   /*================================================================
+      mobile product page filter action
+  =================================================================*/
+  $(".filter-btn").click(function(){
+    $(".filter-action").addClass('show-filters');
+    $("body").addClass("body_scroll_lock");
+  });
+  $(".filter-panel-btn").click(function(){
+    $(".filter-action").removeClass('show-filters');
+    $("body").removeClass("body_scroll_lock");
+  });
+
+  /*================================================================
         mobile menu closer
   =================================================================*/
 
@@ -136,6 +148,31 @@ $(function(){
     $productThumbs = $('.product-thumb');
 
     $('#product_modal').on('shown.bs.modal', function () {
+      $productGallery.slick({
+        dots: false,
+        infinite: true,
+        fade: false,
+        speed: 300,
+        arrows:false,
+        autoplay:false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        asNavFor: '.product-thumb',
+      });  
+  
+      $productThumbs.slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        arrows:false,
+        autoplay:false,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        asNavFor: '.product-gallery',
+        focusOnSelect: true,
+      });
+    });
+
     $productGallery.slick({
       dots: false,
       infinite: true,
@@ -146,146 +183,19 @@ $(function(){
       slidesToShow: 1,
       slidesToScroll: 1,
       asNavFor: '.product-thumb',
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: false
-          }
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
-      ]
     });  
-  
-  $productThumbs.slick({
-    dots: false,
-    infinite: true,
-    speed: 300,
-    arrows:false,
-    autoplay:false,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    asNavFor: '.product-gallery',
-    focusOnSelect: true,
 
-    responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        infinite: true,
-        dots: false
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 1
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1
-      }
-    }
-    ]
-    });
-  });
-
-  $productGallery.slick({
-    dots: false,
-    infinite: true,
-    fade: false,
-    speed: 300,
-    arrows:false,
-    autoplay:false,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    asNavFor: '.product-thumb',
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: false
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
-  });  
-
-$productThumbs.slick({
-  dots: false,
-  infinite: true,
-  speed: 300,
-  arrows:false,
-  autoplay:false,
-  slidesToShow: 4,
-  slidesToScroll: 1,
-  asNavFor: '.product-gallery',
-  focusOnSelect: true,
-
-  responsive: [
-  {
-    breakpoint: 1024,
-    settings: {
+    $productThumbs.slick({
+      dots: false,
+      infinite: true,
+      speed: 300,
+      arrows:false,
+      autoplay:false,
       slidesToShow: 4,
       slidesToScroll: 1,
-      infinite: true,
-      dots: false
-    }
-  },
-  {
-    breakpoint: 600,
-    settings: {
-      slidesToShow: 3,
-      slidesToScroll: 1
-    }
-  },
-  {
-    breakpoint: 480,
-    settings: {
-      slidesToShow: 2,
-      slidesToScroll: 1
-    }
-  }
-  ]
-  });
+      asNavFor: '.product-gallery',
+      focusOnSelect: true,
+    });
 
   /*================================================================
     product detail description slider
@@ -298,33 +208,44 @@ $productThumbs.slick({
     autoplay:false,
     slidesToShow: 1,
     slidesToScroll: 1,
-  
+  });
+
+  /*================================================================
+    related-product-slider slider
+  =================================================================*/
+  $('.related-product-slider').slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    arrows:false,
+    autoplay:false,
+    slidesToShow: 4,
+    slidesToScroll: 1,
     responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: true,
-        dots: false
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 570,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows:false
+        }
       }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
     ]
-    });
+  });
 
 
   /*================================================================
