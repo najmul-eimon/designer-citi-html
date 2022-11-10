@@ -181,6 +181,10 @@ single-product CSS
     height: 30px;
     width: 30px;
   }
+  .single-product .btn-group {
+    width: 115px;
+  }
+  
 }
 
 @media (min-width:1400px) and (max-width:1599px) {
@@ -225,6 +229,11 @@ product details modal CSS
   justify-content: center;
   width: 100%;
 }
+.product-images .swiper-slide img{
+  max-height: 100%;
+  max-width: 100%;
+}
+
 .product-gallery .swiper-slide{
   height: 560px;
 }

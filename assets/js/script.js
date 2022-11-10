@@ -100,6 +100,7 @@ $(function () {
   var swiper = new Swiper(".related-product-slider", {
     spaceBetween: 20,
     loop: true,
+    autoplay: true,
     breakpoints: {
       650: {
         slidesPerView: 2,

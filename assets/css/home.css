@@ -47,6 +47,7 @@ banner CSS
   top: 50%;
   transform: translateY(-50%);
   z-index: 20;
+  box-shadow: 0px 22.2211px 46.294px rgba(0, 0, 0, 0.1);
 }
 .banner .banner-btn-prev{
   left: 0;
@@ -137,6 +138,7 @@ banner CSS
   }
   .banner .shop-now{
     font-size: 16px;
+    padding: 10px 24px;
   }
   .banner .swiper-pagination-bullet{
     height: 10px;
@@ -171,6 +173,18 @@ banner CSS
   }
   .banner .swiper-pagination {
     bottom: 12px;
+  }
+  .banner .shop-now{
+    font-size: 16px;
+    padding: 10px 24px;
+  }
+  .banner .swiper-pagination-bullet{
+    height: 10px;
+    width: 10px;
+  }
+  .banner .swiper-pagination-bullet-active {
+    width: 30px;
+    border-radius: 8px;
   }
 }
 @media (min-width:992px) and (max-width:1199px) {
