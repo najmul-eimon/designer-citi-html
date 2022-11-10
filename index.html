@@ -8,7 +8,7 @@
   <title>Designer Citi</title>
 
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/slick.css">
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
   <link rel="stylesheet" href="assets/css/common.css">
   <link rel="stylesheet" href="assets/css/single-product.css">
   <link rel="stylesheet" href="assets/css/home.css">
@@ -136,9 +136,9 @@
 
                             <div class="cart_counter d-flex flex-column justify-content-between align-items-end">
                               <div class="btn-group" role="group" aria-label="Basic outlined example">
-                                <button type="button" class="btn">-</button>
+                                <button type="button" class="btn minus-btn">-</button>
                                 <input disabled class="form-control text-center" value="1" type="text" readonly />
-                                <button type="button" class="btn">+</button>
+                                <button type="button" class="btn plus-btn">+</button>
                               </div>
 
                               <p class="item_price">
@@ -160,9 +160,9 @@
 
                             <div class="cart_counter d-flex flex-column justify-content-between align-items-end">
                               <div class="btn-group" role="group" aria-label="Basic outlined example">
-                                <button type="button" class="btn">-</button>
+                                <button type="button" class="btn minus-btn">-</button>
                                 <input disabled class="form-control text-center" value="1" type="text" readonly />
-                                <button type="button" class="btn">+</button>
+                                <button type="button" class="btn plus-btn">+</button>
                               </div>
 
                               <p class="item_price">
@@ -184,9 +184,9 @@
 
                             <div class="cart_counter d-flex flex-column justify-content-between align-items-end">
                               <div class="btn-group" role="group" aria-label="Basic outlined example">
-                                <button type="button" class="btn">-</button>
+                                <button type="button" class="btn minus-btn">-</button>
                                 <input disabled class="form-control text-center" value="1" type="text" readonly />
-                                <button type="button" class="btn">+</button>
+                                <button type="button" class="btn plus-btn">+</button>
                               </div>
 
                               <p class="item_price">
@@ -3382,8 +3382,9 @@
         <div class="row">
           <div class="col-md-12 banner-col">
             <div class="position-relative">
-              <div class="banner-slide">
-                  <div class="slide-item">
+              <div class="swiper banner-slide">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide slide-item">
                     <div class="row">
                       <div class="col-xl-8 col-xxl-6">
                         <h1>Better Devices for Better Life</h1>
@@ -3392,7 +3393,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="slide-item">
+                  <div class="swiper-slide slide-item">
                     <div class="row">
                       <div class="col-xl-8 col-xxl-6">
                         <h1>Better Devices for Better Life</h1>
@@ -3401,7 +3402,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="slide-item">
+                  <div class="swiper-slide slide-item">
                     <div class="row">
                       <div class="col-xl-8 col-xxl-6">
                         <h1>Better Devices for Better Life</h1>
@@ -3410,7 +3411,11 @@
                       </div>
                     </div>
                   </div>
+                </div>
+                <div class="swiper-pagination"></div>
               </div>
+              <button class="banner-btn-prev"><i class="ph-caret-left"></i></button>
+              <button class="banner-btn-next"><i class="ph-caret-right"></i></button>
             </div>
           </div>
         </div>
@@ -3431,73 +3436,73 @@
           <div class="col-md-12">
             <div class="row gy-4 top-category-row">
               <div class="col-4 col-md-3 col-lg-3 col-xl-2">
-                <a href="#" class="single-category">
+                <a href="products.html" class="single-category">
                   <img src="assets/images/category/mens-belt.png" alt="">
                   <span>Men's belt</span>
                 </a>
               </div>
               <div class="col-4 col-md-3 col-lg-3 col-xl-2">
-                <a href="#" class="single-category">
+                <a href="products.html" class="single-category">
                   <img src="assets/images/category/watch.png" alt="">
                   <span>Watch</span>
                 </a>
               </div>
               <div class="col-4 col-md-3 col-lg-3 col-xl-2">
-                <a href="#" class="single-category">
+                <a href="products.html" class="single-category">
                   <img src="assets/images/category/mens-shoes.png" alt="">
                   <span>Men's shoes</span>
                 </a>
               </div>
               <div class="col-4 col-md-3 col-lg-3 col-xl-2">
-                <a href="#" class="single-category">
+                <a href="products.html" class="single-category">
                   <img src="assets/images/category/bag.png" alt="">
                   <span>Women's Handbag</span>
                 </a>
               </div>
               <div class="col-4 col-md-3 col-lg-3 col-xl-2">
-                <a href="#" class="single-category">
+                <a href="products.html" class="single-category">
                   <img src="assets/images/category/sound-system.png" alt="">
                   <span>Sound System </span>
                 </a>
               </div>
               <div class="col-4 col-md-3 col-lg-3 col-xl-2">
-                <a href="#" class="single-category">
+                <a href="products.html" class="single-category">
                   <img src="assets/images/category/bag-2.png" alt="">
                   <span>Men's Bag</span>
                 </a>
               </div>
               <div class="col-4 col-md-3 col-lg-3 col-xl-2">
-                <a href="#" class="single-category">
+                <a href="products.html" class="single-category">
                   <img src="assets/images/category/watch-2.png" alt="">
                   <span>Watch</span>
                 </a>
               </div>
               <div class="col-4 col-md-3 col-lg-3 col-xl-2">
-                <a href="#" class="single-category">
+                <a href="products.html" class="single-category">
                   <img src="assets/images/category/sound-system.png" alt="">
                   <span>Sound System </span>
                 </a>
               </div>
               <div class="col-4 col-md-3 col-lg-3 col-xl-2">
-                <a href="#" class="single-category">
+                <a href="products.html" class="single-category">
                   <img src="assets/images/category/headphone.png" alt="">
                   <span>HeadPhone</span>
                 </a>
               </div>
               <div class="col-4 col-md-3 col-lg-3 col-xl-2">
-                <a href="#" class="single-category">
+                <a href="products.html" class="single-category">
                   <img src="assets/images/category/baby.png" alt="">
                   <span>baby's Handbag</span>
                 </a>
               </div>
               <div class="col-4 col-md-3 col-lg-3 col-xl-2">
-                <a href="#" class="single-category">
+                <a href="products.html" class="single-category">
                   <img src="assets/images/category/bag.png" alt="">
                   <span>Men's Bag</span>
                 </a>
               </div>
               <div class="col-4 col-md-3 col-lg-3 col-xl-2">
-                <a href="#" class="single-category">
+                <a href="products.html" class="single-category">
                   <img src="assets/images/category/mens-shoes.png" alt="">
                   <span>Men's shoes</span>
                 </a>
@@ -3978,32 +3983,45 @@
           <div class="row">
             <div class="col-lg-5">
               <div class="product-images">
-                <div class="product-gallery">
-                  <div class="item">
-                      <img src="assets/images/product-details/img-big.png" alt="Product">
-                  </div>
-                  <div class="item">
-                      <img src="assets/images/product-details/img-big.png" alt="Product">
-                  </div>
-                  <div class="item">
-                      <img src="assets/images/product-details/img-big.png" alt="Product">
-                  </div>
-                  <div class="item">
-                      <img src="assets/images/product-details/img-big.png" alt="Product">
+                <div class="swiper product-gallery">
+                  <div class="slider-wrapper">
+                    <div class="swiper-container js-slider--main">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img src="assets/images/product-details/img-big.png" alt="Product">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="assets/images/product-details/img-big.png" alt="Product">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="assets/images/product-details/img-big.png" alt="Product">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="assets/images/product-details/img-big.png" alt="Product">
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="product-thumb">
-                  <div class="item">
-                      <img src="assets/images/product-details/img1.png" alt="Product">
-                  </div>
-                  <div class="item">
-                      <img src="assets/images/product-details/img2.png" alt="Product">
-                  </div>
-                  <div class="item">
-                      <img src="assets/images/product-details/img3.png" alt="Product">
-                  </div>
-                  <div class="item">
-                      <img src="assets/images/product-details/img4.png" alt="Product">
+                
+                <div class="swiper product-thumb">
+                  <div class="slider-wrapper">
+                    <div class="swiper-container js-slider--nav">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img src="assets/images/product-details/img1.png" alt="Product">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="assets/images/product-details/img2.png" alt="Product">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="assets/images/product-details/img3.png" alt="Product">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="assets/images/product-details/img4.png" alt="Product">
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -4269,7 +4287,8 @@
 
   <script src="assets/js/jquery-3.6.1.min.js"></script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/slick.min.js"></script>
+  <script src="assets/js/swiper-bundle.min.js"></script>
   <script src="assets/js/script.js"></script>
+
 </body>
 </html>

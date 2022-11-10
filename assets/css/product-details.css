@@ -93,25 +93,15 @@ product details CSS
   background-color: #F9F9FB;
   border-radius: 16px;
 }
-.details-description .product-desc-slider .slick-dots{
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 22px;
-}
-.details-description .product-desc-slider .slick-dots button{
-  font-size: 0;
+
+.details-description .product-desc-slider .swiper-pagination-bullet{
   height: 8px;
   width: 8px;
   background-color: #D9D9D9;
   opacity: 1;
   transition: all 0.3s;
-  border-radius: 50%;
 }
-.details-description .product-desc-slider .slick-active button{
+.details-description .product-desc-slider .swiper-pagination-bullet-active{
   background-color: var(--primary);
 }
 
@@ -130,7 +120,13 @@ product details CSS
     justify-content: center;
   }
   .product-details .product-description .buttons {
-    justify-content: center !important;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    background-color: var(--white);
+    padding: 12px 16px;
   }
   .details-description {
     padding-top: 40px;
@@ -204,7 +200,7 @@ product details CSS
 related product CSS
 =============================================================*/
 .related-products{
-  padding: 40px 0;
+  padding: 40px 0 20px;
   margin-bottom: 58px;
 }
 .related-products .title{
@@ -215,15 +211,10 @@ related product CSS
   font-weight: 700;
   color: var(--black);
 }
-.related-products .slick-track{
-  padding: 10px 0;
+.related-products .related-product-slider{
+  padding: 10px 0 20px;
 }
-.related-products .slick-slide{
-  margin: 0 8px;
-}
-.related-products .slick-slide img{
-  margin: auto;
-}
+
 
 @media screen and (max-width:767px) {
   .related-products .title{

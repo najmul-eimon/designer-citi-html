@@ -1,9 +1,9 @@
 /*===========================================================
 banner CSS
 =============================================================*/
-
-.banner .slick-list{
+.banner .banner-slide{
   border-radius: 30px;
+  margin: 32px 20px;
 }
 .banner .slide-item{
   background: url('../images/banner.png') no-repeat center;
@@ -34,11 +34,8 @@ banner CSS
   font-size: 16px;
   text-transform: capitalize;
 }
-.banner .banner-slide{
-  margin: 32px 20px;
-}
-.banner .button-next,
-.banner .button-prev{
+.banner .banner-btn-next,
+.banner .banner-btn-prev{
   height: 44px;
   width: 44px;
   border-radius: 8px;
@@ -51,36 +48,28 @@ banner CSS
   transform: translateY(-50%);
   z-index: 20;
 }
-.banner .button-prev{
-  left: -22px;
+.banner .banner-btn-prev{
+  left: 0;
 }
-.banner .button-next{
-  right: -22px;
+.banner .banner-btn-next{
+  right: 0;
 }
-.banner .button-next i,
-.banner .button-prev i{
+.banner .banner-btn-next i,
+.banner .banner-btn-prev i{
   color: var(--orange);
   font-size: 20px;
 }
-.banner .slick-dots{
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+.banner .swiper-pagination {
   bottom: 38px;
 }
-.banner .slick-dots button{
-  font-size: 0;
+.banner .swiper-pagination-bullet {
   height: 11px;
   width: 11px;
   background-color: var(--grey-bg2);
   opacity: 1;
   transition: all 0.3s;
-  border-radius: 50%;
 }
-.banner .slick-active button{
+.banner .swiper-pagination-bullet-active{
   width: 30px;
   background-color: var(--primary);
   border-radius: 8px;
@@ -93,14 +82,16 @@ banner CSS
   }
   .banner .banner-slide{
     margin: 0;
-  }
-  .banner .slick-list{
     border-radius: 0;
   }
   .banner .slide-item{
     padding: 40px 16px 88px;
     border-radius: 0;
     text-align: center;
+  }
+  .banner .banner-btn-next,
+  .banner .banner-btn-prev{
+    display: none;
   }
   .banner .banner-col{
     padding: 0 !important;
@@ -117,14 +108,14 @@ banner CSS
     padding: 10px 24px;
     font-size: 14px;
   }
-  .banner .slick-dots{
+  .banner .swiper-pagination {
     bottom: 12px;
   }
-  .banner .slick-dots button {
+  .banner .swiper-pagination-bullet {
     height: 8px;
     width: 8px;
   }
-  .banner .slick-active button {
+  .banner .swiper-pagination-bullet-active {
     width: 30px;
     border-radius: 8px;
   }
@@ -134,7 +125,7 @@ banner CSS
   .banner .banner-slide{
     margin: 10px;
   }
-  .banner .slick-list{
+  .banner .banner-slide{
     border-radius: 20px;
   }
   .banner h1{
@@ -147,22 +138,23 @@ banner CSS
   .banner .shop-now{
     font-size: 16px;
   }
-  .banner .slick-dots button {
+  .banner .swiper-pagination-bullet{
     height: 10px;
     width: 10px;
   }
-  .banner .slick-active button {
+  .banner .swiper-pagination-bullet-active {
     width: 30px;
     border-radius: 8px;
   }
 }
 @media (min-width:768px) and (max-width:991px) {
-  .banner .button-next,
-  .banner .button-prev{
+  .banner .banner-btn-next,
+  .banner .banner-btn-prev{
     display: none;
   }
   .banner .banner-slide{
     margin: 20px 0;
+    border-radius: 20px;
   }
   .banner .slide-item{
     padding: 40px 16px 80px;
@@ -176,6 +168,9 @@ banner CSS
     font-size: 16px;
     line-height: 22px;
     max-width: 100%;
+  }
+  .banner .swiper-pagination {
+    bottom: 12px;
   }
 }
 @media (min-width:992px) and (max-width:1199px) {

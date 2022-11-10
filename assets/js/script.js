@@ -1,18 +1,15 @@
-$(function(){
+$(function () {
   "use strict";
 
-  /*================================================================
-        mobile menu and bottom navigation
-    =================================================================*/
-  $(".mobile_menu a, .mobile_top_bar a, .cus_menu a ").click(function(){
+  /*======================== mobile menu and bottom navigation ===========================*/
+  $(".mobile_menu a, .mobile_top_bar a, .cus_menu a ").click(function () {
     var mobile_menu_content_name = $(this).attr("data-action");
 
     // If go to home then scroll is available -----------
-    if(mobile_menu_content_name == "home"){
+    if (mobile_menu_content_name == "home") {
       $(".mobile_menu_closer").hide();
       $("body").removeClass("body_scroll_lock");
-    }
-    else{
+    } else {
       $("body").addClass("body_scroll_lock");
       $(".mobile_menu_closer").show();
     }
@@ -20,263 +17,209 @@ $(function(){
     // If go to home then scroll is available -----------
     $(".mobile_menu_content").removeClass("mobile_content_switch");
 
-    $("."+mobile_menu_content_name).toggleClass("mobile_content_switch");
+    $("." + mobile_menu_content_name).toggleClass("mobile_content_switch");
 
-    //Activing color 
+    //Activing color
     $(".mobile_menu a, .mobile_top_bar a ").removeClass("mob_menu_item_active");
     $(this).addClass("mob_menu_item_active");
-    
   });
 
-  /*================================================================
-      mobile product page filter action
-  =================================================================*/
-  $(".filter-btn").click(function(){
-    $(".filter-action").addClass('show-filters');
+  /*============================ mobile product page filter action ================================*/
+  $(".filter-btn").click(function () {
+    $(".filter-action").addClass("show-filters");
     $("body").addClass("body_scroll_lock");
   });
-  $(".filter-panel-btn").click(function(){
-    $(".filter-action").removeClass('show-filters');
+  $(".filter-panel-btn").click(function () {
+    $(".filter-action").removeClass("show-filters");
     $("body").removeClass("body_scroll_lock");
   });
 
-  /*================================================================
-        mobile menu closer
-  =================================================================*/
+  /*============================ mobile menu closer ==============================*/
 
-  $(".mobile_menu_closer a").click(function(){
+  $(".mobile_menu_closer a").click(function () {
     $(".mobile_menu_closer").hide();
   });
 
-  /*================================================================
-        sticku header
-  =================================================================*/
-  var $navOffset = $('.desktop-header').offset().top;
-    $(window).on('scroll',function(){
-        var $scroll = $(this).scrollTop();
-
-       if($scroll > $navOffset){
-           $('.desktop-header').addClass('sticky');
-       }else{
-           $('.desktop-header').removeClass('sticky');
-       }
-   });
-
-  /*================================================================
-        all category show/hide
-  ================================================================*/
-  $('.category-btn').on('click',function(){
-      $('.all-categories').slideToggle(600);
+  /*========================== all category show/hide ==============================*/
+  $(".category-btn").on("click", function () {
+    $(".all-categories").slideToggle(600);
   });
 
-  /*================================================================
-        add to fav icon 
-  =================================================================*/
-  $('.add-to-fav').on('click',function(){
-      $(this).toggleClass('active');
+  /*============================ add to fav icon =============================*/
+  $(".add-to-fav").on("click", function () {
+    $(this).toggleClass("active");
   });
 
-  /*================================================================
-        banner slider
-  =================================================================*/
+  /*============================= banner slider ==============================*/
 
-  $('.banner-slide').slick({
-    dots: true,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    prevArrow: '<button class="button-prev"><i class="ph-caret-left"></i></button>',
-    nextArrow: '<button class="button-next"><i class="ph-caret-right"></i></button>',
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-          arrows:false
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          arrows:false
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          arrows:false
-        }
-      }
-    ]
+  var swiper = new Swiper(".banner-slide", {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    loop: true,
+    navigation: {
+      nextEl: ".banner-btn-next",
+      prevEl: ".banner-btn-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
   });
 
-  /*================================================================
-        filter button
-  =================================================================*/
-  let filterBtn = document.querySelector('.filter-price-btn');
-  let item1 = document.querySelector('.filter-item1')
-  let item2 = document.querySelector('.filter-item2')
+  /*=========================== filter button ===============================*/
+  let filterBtn = document.querySelector(".filter-price-btn");
+  let item1 = document.querySelector(".filter-item1");
+  let item2 = document.querySelector(".filter-item2");
 
-  $('.filter-item1').on('click', function(){
+  $(".filter-item1").on("click", function () {
     filterBtn.innerText = item1.innerHTML;
-  })
-  $('.filter-item2').on('click', function(){
+  });
+  $(".filter-item2").on("click", function () {
     filterBtn.innerText = item2.innerHTML;
   });
+
+  /*========================== product detail modal ===========================*/
+  $(".product-image").click(function () {
+    $("#product_modal").modal("show");
+  });
   
 
-  /*================================================================
-    product detail modal
-  =================================================================*/
-  $(".product-image").click(function(){
-    $("#product_modal").modal('show');
+  /*============================ product detail description slider ==============================*/
+  var swiper = new Swiper(".product-desc-slider", {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
   });
 
-  /*================================================================
-    product detail modal slider
-  =================================================================*/
+  /*============================= related-product-slider slider ==========================*/
 
-    let $productGallery = $('.product-gallery'),
-    $productThumbs = $('.product-thumb');
-
-    $('#product_modal').on('shown.bs.modal', function () {
-      $productGallery.slick({
-        dots: false,
-        infinite: true,
-        fade: false,
-        speed: 300,
-        arrows:false,
-        autoplay:false,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        asNavFor: '.product-thumb',
-      });  
-  
-      $productThumbs.slick({
-        dots: false,
-        infinite: true,
-        speed: 300,
-        arrows:false,
-        autoplay:false,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        asNavFor: '.product-gallery',
-        focusOnSelect: true,
-      });
-    });
-
-    $productGallery.slick({
-      dots: false,
-      infinite: true,
-      fade: false,
-      speed: 300,
-      arrows:false,
-      autoplay:false,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      asNavFor: '.product-thumb',
-    });  
-
-    $productThumbs.slick({
-      dots: false,
-      infinite: true,
-      speed: 300,
-      arrows:false,
-      autoplay:false,
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      asNavFor: '.product-gallery',
-      focusOnSelect: true,
-    });
-
-  /*================================================================
-    product detail description slider
-  =================================================================*/
-  $('.product-desc-slider').slick({
-    dots: true,
-    infinite: true,
-    speed: 300,
-    arrows:false,
-    autoplay:false,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  });
-
-  /*================================================================
-    related-product-slider slider
-  =================================================================*/
-  $('.related-product-slider').slick({
-    dots: false,
-    infinite: true,
-    speed: 300,
-    arrows:false,
-    autoplay:false,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1
-        }
+  var swiper = new Swiper(".related-product-slider", {
+    spaceBetween: 20,
+    loop: true,
+    breakpoints: {
+      650: {
+        slidesPerView: 2,
+        spaceBetween: 20,
       },
-      {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1
-        }
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 20,
       },
-      {
-        breakpoint: 570,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          arrows:false
-        }
-      }
-    ]
+      1400: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+      },
+    },
   });
 
+  /*============================= single product add to cart counter ============================*/
+  // Script for product counter buttons
+  $(".static_btn").click(function () {
+    $(this).css({ display: "none" });
+    $(this).parent().parent().parent().find(".counter_btn").css({ display: "flex", "justify-content": "space-between" });
+    $(this).parent().parent().parent().find("input").val(1);
+  });
 
-  /*================================================================
-    single product add to cart counter
-  =================================================================*/
-    // Script for product counter buttons
-    $(".static_btn").click(function(){
-      $(this).css({"display":"none"});
-      $(this).parent().parent().parent().find(".counter_btn").css({"display":"flex","justify-content":"space-between"});
-      $(this).parent().parent().parent().find("input").val(1);
-    });
+  // input spinner
+  $(".add_btn").click(function () {
+    let $current_val = parseInt($(this).siblings("input").val());
 
-    // input spinner
-    $(".add_btn").click(function(){
-      let $current_val = parseInt($(this).parent().parent().parent().find("input").val());
-     
-      let $update_val = $current_val + 1;
-      $(this).parent().parent().parent().find("input").val($update_val);
-    });
-  
-    $(".remove_btn").click(function(){
-        let $current_val = parseInt($(this).parent().parent().parent().find("input").val());
-      
-        let $update_val = $current_val - 1;
-        $(this).parent().parent().parent().find("input").val($update_val);
-    
-        if($update_val < 1){
-            $(this).parent().parent().parent().find(".counter_btn").css({"display":"none"});
-            $(this).parent().parent().parent().find(".static_btn").css({"display":"block"});
-        }
-    });
+    let $update_val = $current_val + 1;
+    $(this).siblings("input").val($update_val);
+  });
 
+  $(".remove_btn").click(function () {
+    let $current_val = parseInt($(this).siblings("input").val());
 
+    let $update_val = $current_val - 1;
+    $(this).siblings("input").val($update_val);
+
+    if ($update_val < 1) {
+      $(this).parent().parent().parent().find(".counter_btn").css({ display: "none" });
+      $(this).parent().parent().parent().find(".static_btn").css({ display: "block" });
+    }
+  });
 });
+
+/*=========================== product modal slider =============================*/
+// input spinner
+$(".plus-btn").click(function () {
+  let $current_val = parseInt($(this).siblings("input").val());
+
+  let $update_val = $current_val + 1;
+  $(this).siblings("input").val($update_val);
+});
+$(".minus-btn").click(function () {
+  let $current_val = parseInt($(this).siblings("input").val());
+  let $update_val;
+
+  if($current_val > 0){
+    $update_val = $current_val - 1;
+    $(this).siblings("input").val($update_val);
+  }
+});
+
+/*=========================== product modal slider =============================*/
+const multipleSwiperSlides = function () {
+  let sliderMain = document.querySelectorAll(
+    ".swiper-container.js-slider--main"
+  );
+  let sliderNav = document.querySelectorAll(".swiper-container.js-slider--nav");
+
+  // Arrays to hold swiper instances
+  let mainArray = [];
+  let navArray = [];
+
+  // Slider Main
+  sliderMain.forEach(function (element, i) {
+    // Push swiper instance to array
+    mainArray.push(
+      new Swiper(element, {
+        loop: true,
+        loopedSlides: 4,
+      })
+    );
+  });
+
+  // Slider Nav
+  sliderNav.forEach(function (element, i) {
+    var self = sliderNav;
+    // Push swiper instance to array
+    navArray.push(
+      new Swiper(element, {
+        slidesPerView: 4,
+        loop: true,
+        loopedSlides: 4,
+        slideToClickedSlide: true,
+        spaceBetween: 15
+      })
+    );
+  });
+
+  const checkOnPage = function () {
+    if (sliderMain.length > 0 && sliderNav.length > 0) {
+      let numberOfSlides = mainArray.length || navArray.length || 0;
+
+      if (mainArray.length !== navArray.length) {
+        console.warn(
+          "multipleSwiperSlides: Number of main slides and nav slides is different. Expect incorrect behaviour."
+        );
+      }
+
+      for (let i = 0; i < numberOfSlides; i++) {
+        mainArray[i].controller.control = navArray[i];
+        navArray[i].controller.control = mainArray[i];
+      }
+
+      console.log("multipleSwiperSlides: Things should be working fine. B)");
+    }
+  };
+
+  checkOnPage();
+};
+
+multipleSwiperSlides();

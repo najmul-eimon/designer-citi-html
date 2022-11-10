@@ -132,6 +132,10 @@ single-product CSS
   .single-product .buttons {
     padding-top: 16px;
   }
+  .single-product .btn-group ,
+  .single-product .btn-group .add_to_bag {
+    height: 28px;
+  }
 
   .single-product .add-to-cart {
     padding: 4px 30px;
@@ -215,32 +219,31 @@ product details modal CSS
   border-radius: 16px;
 }
 
-.product-images .slick-slide {
+.product-images .swiper-slide {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
+}
+.product-gallery .swiper-slide{
   height: 560px;
 }
-
 .product-thumb {
   margin-top: 20px;
 }
 
-.product-thumb .slick-slide {
+.product-thumb .swiper-slide {
   background-color: #fafafa;
   height: 122px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   border-radius: 8px;
-  margin: 0 8px;
+  box-sizing: border-box;
   overflow: hidden;
 }
 
-.product-thumb .slick-current {
+.product-thumb .swiper-slide-active {
   border: 2px solid var(--primary);
 }
+
 
 .product-description {
   padding-left: 70px;
@@ -435,15 +438,13 @@ product details modal CSS
   .product-details-modal {
     padding: 30px 15px;
   }
-  .product-images .slick-slide {
+  .product-images .swiper-slide {
     height: 260px;
   }
-  .product-thumb .slick-slide {
+  .product-thumb .swiper-slide {
     height: 55px;
-    margin: 0;
-    overflow: hidden;
   }
-  .product-thumb .slick-current {
+  .product-thumb .swiper-slide-active {
     border-width: 1px;
   }
   .product-description,
@@ -506,7 +507,18 @@ product details modal CSS
     line-height: 21px;
   }
 }
+@media (min-width: 576px) and (max-width:767px) {
+  .product-thumb .swiper-slide {
+    height: 100px;
+  }
+}
 @media (min-width: 768px) and (max-width:991px) {
+  .product-images .swiper-slide {
+    height: 260px;
+  }
+  .product-thumb .swiper-slide {
+    height: 100px;
+  }
   .product-description .main-feature {
     padding-right: 0;
   }
@@ -520,7 +532,7 @@ product details modal CSS
   }
 }
 @media (min-width: 992px) and (max-width:1399px) {
-  .product-gallery .slick-slide {
+  .product-gallery .swiper-slide {
     height: 455px;
   }
   .product-description .main-feature {
