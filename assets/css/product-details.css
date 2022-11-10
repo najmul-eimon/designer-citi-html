@@ -60,18 +60,18 @@ product details CSS
 .details-description .desc-text ul{
   display: flex;
   flex-wrap: wrap;
+  column-gap: 16px;
+  row-gap: 24px;
 }
 .details-description .desc-text ul li{
-  width: 50%;
+  width: calc(50% - 8px);
   color: #636363;
   font-weight: 500;
   font-size: 16px;
   padding-left: 30px;
   position: relative;
 }
-.details-description .desc-text ul li:not(:last-child){
-  margin-bottom: 24px;
-}
+
 .details-description .desc-text ul li::before{
   content: '';
   width: 0; 
@@ -83,6 +83,9 @@ product details CSS
   top: 50%;
   transform: translateY(-50%);
   left: 0;
+}
+.details-description .product-desc-slider{
+  border-radius: 16px;
 }
 .details-description .product-desc-slider .item{
   display: flex;
@@ -152,9 +155,7 @@ product details CSS
     font-size: 14px;
     line-height: 24px;
     padding-left: 22px;
-  }
-  .details-description .desc-text ul li:not(:last-child) {
-    margin-bottom: 12px;
+  row-gap: 12px;
   }
   .details-description .product-desc-slider{
     margin-top: 24px;
@@ -178,9 +179,7 @@ product details CSS
     font-size: 14px;
     line-height: 24px;
     padding-left: 22px;
-  }
-  .details-description .desc-text ul li:not(:last-child) {
-    margin-bottom: 12px;
+  row-gap: 12px;
   }
 }
 @media (min-width:992px) and (max-width:1199px) {
