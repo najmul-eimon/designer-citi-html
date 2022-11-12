@@ -33,7 +33,7 @@ single-product CSS
 
 .add-to-fav.active svg path {
   fill: var(--red);
-  stroke: var(--red)
+  stroke: var(--red);
 }
 
 .single-product span {
