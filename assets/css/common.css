@@ -1100,7 +1100,7 @@ mobile header CSS
   line-height: 17px;
   text-transform: capitalize;
   color: var(--secondary);
-  padding: 10px 5px;
+  padding: 10px 5px 10px 10px;
 }
 
 .mobile_cat .mobile_sub_item ul li {
@@ -1116,7 +1116,7 @@ mobile header CSS
   font-size: 12px;
   line-height: 15px;
   text-transform: capitalize;
-  color: var(--secondary);
+  color: rgba(59, 61, 74, 0.6);
   text-decoration: none;
 }
 
