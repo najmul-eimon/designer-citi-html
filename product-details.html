@@ -3504,7 +3504,7 @@
                               <span>46</span>
                             </label>
                           </li>
-                          <li><button type="button">Size Chart</button></li>
+                          <li><button type="button" data-bs-toggle="modal" data-bs-target="#sizeChartModal">Size Chart</button></li>
                         </ul>
                       </div>
       
@@ -3512,10 +3512,16 @@
                         <button type="button" class="add-to-fav">
                           <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"></path></svg>
                         </button>
-                          <div class="d-flex align-items-center">
-                            <button type="button" class="buy-now">Buy Now</button>
-                            <button type="button" class="add-to-cart">Add to cart</button>
+                        <div class="d-flex align-items-center">
+                          <button type="button" class="buy-now">Buy Now</button>
+                          <button type="button" class="add-to-cart static_btn">Add to cart</button>
+
+                          <div class="btn-group counter_btn" role="group" aria-label="Basic outlined example">
+                            <button type="button" class="add_to_bag remove_btn"> - </button>
+                            <input disabled="" class="text-center" value="1">
+                            <button type="button" class="add_to_bag add_btn">+</button>
                           </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -3787,7 +3793,6 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-pagination"></div>
             </div>
           </div>
         </div>
@@ -3930,7 +3935,7 @@
                           <span>46</span>
                         </label>
                       </li>
-                      <li><button type="button">Size Chart</button></li>
+                      <li><button type="button" data-bs-toggle="modal" data-bs-target="#sizeChartModal">Size Chart</button></li>
                     </ul>
                   </div>
 
@@ -3941,9 +3946,15 @@
                     <div class="text-center btns">
                       <div class="d-flex align-items-center">
                         <button type="button" class="buy-now">Buy Now</button>
-                        <button type="button" class="add-to-cart">Add to cart</button>
+                        <button type="button" class="add-to-cart static_btn">Add to cart</button>
+
+                        <div class="btn-group counter_btn" role="group" aria-label="Basic outlined example">
+                          <button type="button" class="add_to_bag remove_btn"> - </button>
+                          <input disabled="" class="text-center" value="1">
+                          <button type="button" class="add_to_bag add_btn">+</button>
+                        </div>
                       </div>
-                      <button type="button" class="full-product-view">Full Product View</button>
+                      <a href="product-details.html" class="full-product-view">Full Product View</a>
                     </div>
                   </div>
                 </div>
@@ -3959,6 +3970,21 @@
     </div>
   </div>
   <!-- product details modal end -->
+
+  <!-- size chart modal end -->
+  <div class="modal fade size-chart-modal" id="sizeChartModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">Close</button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/images/size-chart.png" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- size chart modal end -->
 
   <!-- footer start -->
   <footer>
@@ -4108,11 +4134,12 @@
     </section>
     <!-- footer-bottom end -->
   </footer>
-  <!-- footer end -->
+  <!-- footer end --> 
 
   <script src="assets/js/jquery-3.6.1.min.js"></script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/swiper-bundle.min.js"></script>
   <script src="assets/js/script.js"></script>
+
 </body>
 </html>

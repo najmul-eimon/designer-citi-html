@@ -4180,7 +4180,7 @@
                           <span>46</span>
                         </label>
                       </li>
-                      <li><button type="button">Size Chart</button></li>
+                      <li><button type="button" data-bs-toggle="modal" data-bs-target="#sizeChartModal">Size Chart</button></li>
                     </ul>
                   </div>
 
@@ -4191,9 +4191,15 @@
                     <div class="text-center btns">
                       <div class="d-flex align-items-center">
                         <button type="button" class="buy-now">Buy Now</button>
-                        <button type="button" class="add-to-cart">Add to cart</button>
+                        <button type="button" class="add-to-cart static_btn">Add to cart</button>
+
+                        <div class="btn-group counter_btn" role="group" aria-label="Basic outlined example">
+                          <button type="button" class="add_to_bag remove_btn"> - </button>
+                          <input disabled="" class="text-center" value="1">
+                          <button type="button" class="add_to_bag add_btn">+</button>
+                        </div>
                       </div>
-                      <button type="button" class="full-product-view">Full Product View</button>
+                      <a href="product-details.html" class="full-product-view">Full Product View</a>
                     </div>
                   </div>
                 </div>
@@ -4209,6 +4215,21 @@
     </div>
   </div>
   <!-- product details modal end -->
+
+  <!-- size chart modal end -->
+  <div class="modal fade size-chart-modal" id="sizeChartModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">Close</button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/images/size-chart.png" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- size chart modal end -->
 
   <!-- footer start -->
   <footer>

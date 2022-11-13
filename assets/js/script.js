@@ -1,6 +1,36 @@
 $(function () {
   "use strict";
 
+  /*======================== related-product-slider ===========================*/
+  var swiper = new Swiper(".related-product-slider", {
+    spaceBetween: 20,
+    loop: true,
+    autoplay: true,
+    slidesPerGroup: 1,
+    breakpoints: {
+      650: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      1400: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+      },
+    },
+  });
+
+  $(".related-product-slider").mouseenter(function(){
+    swiper.autoplay.stop();
+  });
+
+  $(".related-product-slider").mouseleave(function(){
+    swiper.autoplay.start();
+  });
+
   /*======================== mobile menu and bottom navigation ===========================*/
   $(".mobile_menu a, .mobile_top_bar a, .cus_menu a ").click(function () {
     var mobile_menu_content_name = $(this).attr("data-action");
@@ -81,6 +111,7 @@ $(function () {
   /*========================== product detail modal ===========================*/
   $(".product-image").click(function () {
     $("#product_modal").modal("show");
+    console.log('clicked');
   });
   
 
@@ -95,27 +126,6 @@ $(function () {
     },
   });
 
-  /*============================= related-product-slider slider ==========================*/
-
-  var swiper = new Swiper(".related-product-slider", {
-    spaceBetween: 20,
-    loop: true,
-    autoplay: true,
-    breakpoints: {
-      650: {
-        slidesPerView: 2,
-        spaceBetween: 20,
-      },
-      992: {
-        slidesPerView: 3,
-        spaceBetween: 20,
-      },
-      1400: {
-        slidesPerView: 4,
-        spaceBetween: 20,
-      },
-    },
-  });
 
   /*============================= single product add to cart counter ============================*/
   // Script for product counter buttons
