@@ -255,7 +255,6 @@ product details modal CSS
   padding: 40px;
 }
 
-.product-gallery-main,
 .product-gallery {
   background-color: #fafafa;
   border-radius: 16px;
@@ -273,7 +272,6 @@ product details modal CSS
   max-width: 100%;
 }
 
-.product-gallery-main .swiper-slide,
 .product-gallery .swiper-slide {
   height: 560px;
 }
@@ -660,7 +658,6 @@ product details modal CSS
 
 @media (min-width: 992px) and (max-width:1399px) {
 
-  .product-gallery-main .swiper-slide,
   .product-gallery .swiper-slide {
     height: 455px;
   }

@@ -183,13 +183,13 @@ product details CSS
   }
 }
 @media (min-width:992px) and (max-width:1199px) {
-  .product-thumb .slick-slide {
-    height: 60px;
+  .product-thumb .swiper-slide {
+    height: 80px;
   }
 }
 @media (min-width:1200px) and (max-width:1399px) {
-  .product-thumb .slick-slide {
-    height: 80px;
+  .product-thumb .swiper-slide {
+    height: 90px;
   }
   .product-details .product-details-wrapper {
     padding: 40px 0;
