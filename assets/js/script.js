@@ -2,7 +2,7 @@ $(function () {
   "use strict";
 
   /*======================== preloader ===========================*/
-  $(window).on('load', function() {
+  $(document).ready(function() {
     $("#preloader ").fadeOut(500); 
     $("body").css({'overflow':'unset'}); 
   });
