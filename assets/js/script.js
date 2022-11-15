@@ -1,6 +1,12 @@
 $(function () {
   "use strict";
 
+  /*======================== preloader ===========================*/
+  $(window).on('load', function() {
+    $("#preloader ").fadeOut(500); 
+    $("body").css({'overflow':'unset'}); 
+  });
+
   /*======================== related-product-slider ===========================*/
   var swiperRelated = new Swiper(".related-product-slider", {
     spaceBetween: 20,

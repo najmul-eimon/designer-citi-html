@@ -61,7 +61,7 @@ banner CSS
   font-size: 20px;
 }
 .banner .swiper-pagination {
-  bottom: 38px;
+  bottom: 26px;
 }
 .banner .swiper-pagination-bullet {
   height: 11px;
@@ -412,6 +412,10 @@ promotion CSS
   border: 1px solid var(--secondary);
   background-color: transparent;
 }
+.promotion .shop-now:hover,
+.promotion .shop-now:hover i{
+  color: var(--white);
+}
 
 @media screen and (max-width:767px) {
   .promotion{
@@ -486,8 +490,16 @@ trending CSS
   color: var(--primary);
   text-transform: uppercase;
   border-radius: 8px;
-  border: 1.5px solid var(--primary);
+  border: 1px solid var(--primary);
 }
+
+.trending .load-more-btn.btn-animation:after{
+  background-color: var(--primary);
+}
+.trending .load-more-btn:hover{
+  color: var(--white);
+}
+
 @media screen and (max-width:767px) {
   .trending{
     padding: 40px 0;

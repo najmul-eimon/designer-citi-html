@@ -72,6 +72,12 @@ single-product CSS
   border-radius: 6px;
   border: 1px solid var(--primary);
 }
+.single-product .buy-now.btn-animation:after{
+  background-color: var(--primary);
+}
+.single-product .buy-now:hover{
+  color: var(--white);
+}
 
 .single-product .add-to-cart {
   padding: 6px 30px;
@@ -457,11 +463,20 @@ product details modal CSS
   font-size: 16px;
   font-weight: 500;
 }
+.product-description .buttons .buy-now.btn-animation:after{
+  background-color: var(--primary);
+}
+.product-description .buttons .buy-now:hover{
+  color: var(--white);
+}
 
 .product-description .buttons .add-to-cart {
   background-color: var(--primary);
   color: var(--white);
   margin-left: 16px;
+}
+.product-description .buttons .add-to-cart:hover{
+  border-color: var(--secondary);
 }
 
 .product-description .buttons .full-product-view {

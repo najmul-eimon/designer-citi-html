@@ -401,7 +401,13 @@ products CSS
   color: var(--primary);
   text-transform: uppercase;
   border-radius: 8px;
-  border: 1.5px solid var(--primary);
+  border: 1px solid var(--primary);
+}
+.products .load-more-btn.btn-animation:after{
+  background-color: var(--primary);
+}
+.products .load-more-btn:hover{
+  color: var(--white);
 }
 
 .products .filter-panel-btns {
