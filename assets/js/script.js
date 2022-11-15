@@ -174,6 +174,34 @@ $(function () {
 
 });
 
+/*=========================== count down timer =============================*/
+var timer = document.querySelector('.timer');
+
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+
+var x = setInterval(function() {
+  var now = new Date().getTime();
+  var distance = countDownDate - now;
+  
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  if(timer){
+    timer.innerHTML = `End In ${days} days : ${hours} hours : ${minutes} minutes`;
+  }
+    
+  if (distance < 0) {
+    clearInterval(x);
+    if(timer){
+      timer.innerHTML = "Time Expired!";
+    }
+  }
+}, 1000);
+
+
 /*=========================== product modal slider =============================*/
 const multipleSwiperSlides = function () {
   let sliderMain = document.querySelectorAll(".swiper.js-slider--main");

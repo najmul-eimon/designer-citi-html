@@ -843,10 +843,13 @@ all-categories CSS
 
 .nav_mega_menu .nav_mega_content {
   max-width: 1500px;
-  padding: 64px 96px 96px 96px;
+  padding: 64px 96px;
   display: flex;
   flex-wrap: wrap;
   margin: auto;
+}
+.nav_mega_menu .nav_mega_content .nav_gap{
+  --bs-gutter-y: 64px;
 }
 
 .nav_mega_menu .title {
@@ -862,6 +865,7 @@ all-categories CSS
 }
 
 .nav_mega_sub_items a {
+  display: block;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
@@ -894,13 +898,14 @@ all-categories CSS
     width: 96%;
   }
 
-  .all-categories .nav_mega_content>.row {
-    gap: 0 !important;
+  .nav_mega_menu .nav_mega_content .nav_gap{
+    --bs-gutter-y: 32px;
   }
 
   .nav_mega_menu .title {
     font-weight: 500;
     font-size: 14px;
+    margin-bottom: 12px;
   }
 
   .nav_mega_sub_items a {

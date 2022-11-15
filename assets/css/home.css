@@ -324,8 +324,7 @@ featured-product CSS
   font-weight: 600;
   color: var(--secondary);
 }
-.featured-product .title a{
-  display: inline-block;
+.featured-product .title .timer{
   padding: 10px 12px;
   background-color: var(--primary);
   color: var(--white);
@@ -351,7 +350,7 @@ featured-product CSS
     font-size: 16px;
     font-weight: 700;
   }
-  .featured-product .title a{
+  .featured-product .title .timer{
     padding: 8px 12px;
     font-size: 12px;
   }
