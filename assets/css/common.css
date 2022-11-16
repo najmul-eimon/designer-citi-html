@@ -146,7 +146,7 @@ a:focus {
 }
 
 .body_scroll_lock {
-  overflow: hidden;
+  overflow: hidden !important;
 }
 
 /* custom scrollbar */
@@ -588,7 +588,7 @@ Cart CSS
 
 .menu_content_heading .add_item:hover {
   background-color: var(--primary);
-  color: var(--white);
+  color: var(--white) !important;
 }
 
 .menu_content_heading .add_item:hover svg path {
@@ -849,6 +849,11 @@ mobile favourite CSS
 
   .mobile_favourite .single-product .btn-group {
     width: 90px;
+    height: 28px;
+  }
+
+  .mobile_favourite .single-product .btn-group .add_to_bag {
+    height: 28px;
   }
 
   .mobile_favourite .single-product .btn-group .add_to_bag {
@@ -1060,12 +1065,27 @@ mobile header CSS
   width: 100%;
 }
 
+.mobile_top_bar .mobile_search_cart_btn {
+  gap: 24px;
+}
+
+@media screen and (max-width:575px) {
+  .mobile_top_bar .mobile_search_cart_btn {
+    gap: 16px;
+  }
+
+  .mobile_top_bar .mobile_search_cart_btn svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
 /*================== mobile menu content ====================*/
 .mobile_menu_content {
   position: absolute;
   width: 100%;
   right: 100%;
-  height: calc(100vh - 154px);
+  height: calc(100vh - 150px);
   transition: all .5s;
   z-index: 10;
   background-color: white;
@@ -1077,11 +1097,22 @@ mobile header CSS
   z-index: 990;
 }
 
+
 /*================== mobile menu closer ====================*/
 .mobile_menu_closer {
   padding: 5px 12px;
   background-color: #F7F7F7;
-  display: none;
+  position: relative;
+  width: 100%;
+  right: 100%;
+  transition: all .5s;
+}
+.mobile_menu_closer.show{
+  right: 0;
+}
+
+.mobile_nav {
+  padding: 20px 0;
 }
 
 .mobile_nav a {
@@ -1093,7 +1124,7 @@ mobile header CSS
   text-transform: uppercase;
   color: #C4C4C4;
   display: block;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .mob_menu_item_active {
@@ -1115,14 +1146,14 @@ mobile header CSS
 .mobile_cat .all_department_menu {
   padding: 0px;
   position: relative;
-  height: calc(100vh - 154px);
+  height: calc(100vh - 150px);
 }
 
 .mobile_cat .department_items {
   max-width: 94px;
   width: 100%;
   position: relative;
-  height: calc(100vh - 154px);
+  height: calc(100vh - 150px);
   overflow: scroll;
   position: absolute;
   left: 0px;
@@ -1138,13 +1169,14 @@ mobile header CSS
 
 .all_department_menu .department_items ul li {
   list-style: none;
+  border-bottom: 2px solid var(--white);
+  padding: 0;
+  background-color: transparent;
 }
 
-.all_department_menu .department_items ul li:last-child a {
-  margin-bottom: 80px;
-}
 
 .all_department_menu .department_items ul>li a {
+  min-height: 70px;
   color: var(--light-grey2);
   font-size: 12px;
   line-height: 18px;
@@ -1152,6 +1184,12 @@ mobile header CSS
   text-transform: capitalize;
   text-align: center;
   transition: all 0.2s;
+  background-color: #f9f9f9;
+  border-radius: 0;
+}
+
+.all_department_menu .department_items ul li .nav-link.active {
+  background-color: var(--white);
 }
 
 .float_nav_item>li a:hover {
@@ -1163,6 +1201,7 @@ mobile header CSS
   display: block;
   margin: 0 auto;
 }
+
 
 .mobile_cat ul {
   margin-bottom: 0px;
@@ -1262,7 +1301,7 @@ mobile header CSS
 
 .mobile_cat .tab-content>.tab-pane {
   overflow: scroll;
-  height: calc(100vh - 154px);
+  height: calc(100vh - 150px);
 }
 
 @media screen and (max-width: 1199px) {
@@ -1305,11 +1344,15 @@ mobile header CSS
   border-radius: 5px;
   text-align: center;
   text-decoration: none;
-  transition: .5s;
+  transition: all 0.4s;
   margin-right: 5px;
   text-transform: capitalize;
   display: inline-block;
   margin-bottom: 5px;
+}
+
+.tag_btn:hover {
+  color: var(--primary);
 }
 
 .mobile_search h3 {

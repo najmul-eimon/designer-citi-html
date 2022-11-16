@@ -496,7 +496,7 @@
 
       <!-- mobile top-bar start -->
       <div class="mobile_top_bar container">
-        <div class="row d-flex align-items-center">
+        <div class="row align-items-center">
           <div class="col-3 col-lg-1">
             <div class="mobile_menu_btn">
               <a data-action="mobile_navs" role="button">
@@ -514,7 +514,7 @@
             </div>
           </div>
           <div class="col-3 col-lg-1">
-            <div class="mobile_search_cart_btn d-flex justify-content-end gap-4">
+            <div class="mobile_search_cart_btn d-flex justify-content-end">
               <a data-action="mobile_search">
                 <svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="9.16666" cy="9.16666" r="8.26666" stroke="white" stroke-width="1.8" />
@@ -3267,7 +3267,7 @@
             <div class="row">
               <div class="col-sm-6 col-md-4">
                 <div class="single-product position-relative">
-                  <button type="button" class="add-to-fav">
+                  <button type="button" class="add-to-fav active">
                     <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"></path></svg>
                   </button>
                   <div class="product-image img">
@@ -3292,7 +3292,7 @@
   
               <div class="col-sm-6 col-md-4">
                 <div class="single-product position-relative">
-                  <button type="button" class="add-to-fav">
+                  <button type="button" class="add-to-fav active">
                     <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"></path></svg>
                   </button>
                   <div class="product-image img">
@@ -3317,7 +3317,7 @@
   
               <div class="col-sm-6 col-md-4">
                 <div class="single-product position-relative">
-                  <button type="button" class="add-to-fav">
+                  <button type="button" class="add-to-fav active">
                     <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M128,216S28,160,28,92A52,52,0,0,1,128,72h0A52,52,0,0,1,228,92C228,160,128,216,128,216Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"></path></svg>
                   </button>
                   <div class="product-image img">
@@ -3407,7 +3407,7 @@
                       <div class="col-xl-8 col-xxl-6">
                         <h1>Better Devices for Better Life</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. </p>
-                        <a href="#" class="shop-now">Shop Now</a>
+                        <a href="#" class="shop-now btn-animation">Shop Now</a>
                       </div>
                     </div>
                   </div>
@@ -3416,7 +3416,7 @@
                       <div class="col-xl-8 col-xxl-6">
                         <h1>Better Devices for Better Life</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. </p>
-                        <a href="#" class="shop-now">Shop Now</a>
+                        <a href="#" class="shop-now btn-animation">Shop Now</a>
                       </div>
                     </div>
                   </div>
@@ -3510,11 +3510,21 @@
                   <span>Men's Bag</span>
                 </a>
               </div>
-              <div class="col-4 col-md-3 col-lg-3 col-xl-2">
+              <div class="col-4 col-md-3 col-lg-3 col-xl-2 hide-mobile">
                 <a href="products.html" class="single-category">
                   <img src="assets/images/category/mens-shoes.png" alt="">
                   <span>Men's shoes</span>
                 </a>
+              </div>
+              <div class="col-4 col-md-3 col-lg-3 col-xl-2">
+                <button type="button" class="single-category mobile-more-btn">
+                  <svg width="28" height="8" viewBox="0 0 28 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="4" cy="4" r="3" stroke="#7371FC" stroke-width="1.5"/>
+                    <circle cx="14" cy="4" r="3" stroke="#7371FC" stroke-width="1.5"/>
+                    <circle cx="24" cy="4" r="3" stroke="#7371FC" stroke-width="1.5"/>
+                    </svg>                    
+                  <span>4 More</span>
+                </button>
               </div>
             </div>
           </div>

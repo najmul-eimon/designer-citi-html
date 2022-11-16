@@ -188,7 +188,7 @@ single-product CSS
   .single-product .img {
     height: 260px;
   }
-  
+
   .single-product .buy-now {
     padding: 7px 20px;
     font-size: 14px;
@@ -713,6 +713,9 @@ product details modal CSS
 @media (min-width: 992px) and (max-width:1199px) {
   .product-modal .modal-dialog {
     max-width: 700px;
+  }
+  .product-modal .btn-close {
+    display: block;
   }
 }
 

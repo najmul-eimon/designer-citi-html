@@ -43,11 +43,11 @@ $(function () {
 
     // If go to home then scroll is available -----------
     if (mobile_menu_content_name == "home") {
-      $(".mobile_menu_closer").hide();
+      $(".mobile_menu_closer").removeClass('show');
       $("body").removeClass("body_scroll_lock");
     } else {
       $("body").addClass("body_scroll_lock");
-      $(".mobile_menu_closer").show();
+      $(".mobile_menu_closer").addClass('show');
     }
 
     // If go to home then scroll is available -----------
@@ -73,7 +73,7 @@ $(function () {
   /*============================ mobile menu closer ==============================*/
 
   $(".mobile_menu_closer a").click(function () {
-    $(".mobile_menu_closer").hide();
+    $(".mobile_menu_closer").removeClass('show');
   });
 
   /*========================== all category show/hide ==============================*/

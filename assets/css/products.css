@@ -131,6 +131,7 @@ products CSS
 .products .filter-action .mobile-title {
   padding: 12px 0;
   display: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.02);
 }
 
 .products .filter-action .mobile-title h3 {
@@ -394,11 +395,16 @@ products CSS
   padding: 0 10px;
   font-size: 16px;
   color: var(--secondary);
+  transition: all 0.3s;
 }
 
 .products .filtered-products .price-input input::placeholder {
   font-size: 16px;
   color: rgba(57, 61, 79, 0.3);
+}
+.products .filtered-products .price-input input:hover,
+.products .filtered-products .price-input input:focus{
+  border-color: var(--primary);
 }
 
 .products .filtered-products .mob-title {
@@ -474,6 +480,9 @@ products CSS
     font-size: 14px;
     line-height: 20px;
   }
+  .products .filtered-products .sort-by li a {
+    width: 136px;
+  }
 }
 
 @media screen and (max-width:991px) {
@@ -507,6 +516,7 @@ products CSS
 
   .products .filtered-products {
     padding-top: 40px;
+    padding-bottom: 40px;
   }
 
   .products .filtered-products .accordion {
@@ -524,9 +534,13 @@ products CSS
     font-weight: 500;
     border-color: rgba(0, 0, 0, 0.06);
   }
-
+  .products .filtered-products .accordion-button::after,
   .products .filtered-products .accordion-button:not(.collapsed)::after {
-    line-height: 20px;
+    line-height: 24px;
+  }
+
+  .products .refine-category .input-search-label {
+    height: 40px;
   }
 
   .products .filtered-products .sort-by {
@@ -538,10 +552,13 @@ products CSS
     font-size: 12px;
   }
 
+  .products .refine-category ul {
+    margin-top: 12px;
+  }
+  
   .products .refine-category ul p {
     font-size: 14px;
   }
-
   .products .filtered-products .item-price {
     padding: 12px 12px 30px 12px;
   }
@@ -559,6 +576,7 @@ products CSS
   .products .filtered-products .price-input input::placeholder {
     font-size: 12px;
   }
+  
 }
 
 @media (min-width:992px) and (max-width:1199px) {

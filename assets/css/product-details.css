@@ -176,7 +176,13 @@ product details CSS
   .details-description .desc-text {
     padding-right: 0;
   }
-
+  .details-description .desc-text p {
+    font-size: 14px;
+  }
+  
+  .details-description .desc-text ul {
+    row-gap: 12px;
+  }
   .details-description .desc-text ul li {
     width: 100%;
     font-size: 14px;
@@ -266,6 +272,9 @@ related product CSS
 
 
 @media screen and (max-width:767px) {
+  .related-products {
+    margin-bottom: 20px;
+  }
   .related-products .title {
     padding-bottom: 24px;
   }
@@ -274,4 +283,5 @@ related product CSS
     font-size: 16px;
     line-height: 24px;
   }
+
 }
