@@ -72,10 +72,12 @@ single-product CSS
   border-radius: 6px;
   border: 1px solid var(--primary);
 }
-.single-product .buy-now.btn-animation:after{
+
+.single-product .buy-now.btn-animation:after {
   background-color: var(--primary);
 }
-.single-product .buy-now:hover{
+
+.single-product .buy-now:hover {
   color: var(--white);
 }
 
@@ -163,7 +165,7 @@ single-product CSS
 
 @media (min-width:992px) and (max-width:1199px) {
   .single-product .buy-now {
-    padding: 8px 26px;
+    padding: 7px 26px;
     font-size: 14px;
     border-radius: 5px;
   }
@@ -173,14 +175,22 @@ single-product CSS
   }
 
   .single-product .add-to-cart {
-    padding: 8px 30px;
+    padding: 7px 30px;
     font-size: 14px;
+  }
+
+  .single-product .btn-group {
+    width: 115px;
   }
 }
 
 @media (min-width:1200px) and (max-width:1399px) {
+  .single-product .img {
+    height: 260px;
+  }
+  
   .single-product .buy-now {
-    padding: 8px 20px;
+    padding: 7px 20px;
     font-size: 14px;
     border-radius: 5px;
   }
@@ -190,7 +200,7 @@ single-product CSS
   }
 
   .single-product .add-to-cart {
-    padding: 8px 20px;
+    padding: 7px 20px;
     font-size: 14px;
   }
 
@@ -200,20 +210,25 @@ single-product CSS
   }
 
   .single-product .btn-group {
-    width: 115px;
+    width: 105px;
   }
 
 }
 
 @media (min-width:1400px) and (max-width:1599px) {
   .single-product .buy-now {
-    padding: 10px 20px;
+    padding: 6px 20px;
     font-size: 14px;
   }
 
   .single-product .add-to-cart {
-    padding: 10px 20px;
+    padding: 6px 20px;
     font-size: 14px;
+  }
+
+  .single-product .btn-group,
+  .single-product .btn-group .add_to_bag {
+    height: 35px;
   }
 }
 
@@ -334,6 +349,18 @@ product details modal CSS
   line-height: 36px;
   color: var(--secondary);
   margin-right: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.product-description h2 span {
+  display: inline-block;
+  color: rgba(57, 61, 79, 0.5);
+  margin-right: 24px;
+  text-decoration: line-through;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 34px;
 }
 
 .product-description .price {
@@ -463,10 +490,12 @@ product details modal CSS
   font-size: 16px;
   font-weight: 500;
 }
-.product-description .buttons .buy-now.btn-animation:after{
+
+.product-description .buttons .buy-now.btn-animation:after {
   background-color: var(--primary);
 }
-.product-description .buttons .buy-now:hover{
+
+.product-description .buttons .buy-now:hover {
   color: var(--white);
 }
 
@@ -475,7 +504,8 @@ product details modal CSS
   color: var(--white);
   margin-left: 16px;
 }
-.product-description .buttons .add-to-cart:hover{
+
+.product-description .buttons .add-to-cart:hover {
   border-color: var(--secondary);
 }
 
@@ -580,6 +610,13 @@ product details modal CSS
     margin-right: 0;
   }
 
+  .product-description h2 span {
+    margin-right: 16px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
   .product-description h5 {
     font-weight: 700;
     font-size: 12px;
@@ -648,6 +685,14 @@ product details modal CSS
 }
 
 @media (min-width: 768px) and (max-width:991px) {
+  .product-modal .modal-dialog {
+    max-width: 700px;
+  }
+
+  .product-modal .btn-close {
+    display: block;
+  }
+
   .product-images .swiper-slide {
     height: 260px;
   }
@@ -665,14 +710,14 @@ product details modal CSS
   }
 }
 
-@media (min-width: 768px) and (max-width:1560px) {
+@media (min-width: 992px) and (max-width:1199px) {
   .product-modal .modal-dialog {
-    margin: 15px;
+    max-width: 700px;
   }
 }
 
-@media (min-width: 992px) and (max-width:1399px) {
 
+@media (min-width: 992px) and (max-width:1399px) {
   .product-gallery .swiper-slide {
     height: 455px;
   }
@@ -683,5 +728,37 @@ product details modal CSS
 
   .product-description {
     padding-left: 0;
+  }
+}
+
+@media (min-width:1200px) and (max-width:1399px) {
+  .product-modal .modal-dialog {
+    max-width: 1000px;
+  }
+
+  .product-description .sizes ul {
+    gap: 16px;
+  }
+
+  .product-thumb .swiper-slide {
+    height: 100px;
+  }
+}
+
+@media (min-width:1400px) and (max-width:1699px) {
+  .product-modal .modal-dialog {
+    max-width: 1100px;
+  }
+
+  .product-description .main-feature {
+    padding-right: 0;
+  }
+
+  .product-description {
+    padding-left: 0;
+  }
+
+  .product-thumb .swiper-slide {
+    height: 100px;
   }
 }

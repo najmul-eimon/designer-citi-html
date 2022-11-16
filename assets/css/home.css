@@ -1,23 +1,25 @@
 /*===========================================================
 banner CSS
 =============================================================*/
-.banner .banner-slide{
+.banner .banner-slide {
   border-radius: 30px;
   margin: 32px 20px;
 }
-.banner .slide-item{
+
+.banner .slide-item {
   background: url('../images/banner.png') no-repeat center;
   background-size: cover;
   padding: 50px 96px;
 }
-.banner h1{
+
+.banner h1 {
   color: #383838;
   font-size: 52px;
   font-weight: 700;
   font-family: var(--montserrat);
 }
 
-.banner p{
+.banner p {
   color: #A7A7A7;
   font-size: 22px;
   line-height: 37px;
@@ -25,7 +27,8 @@ banner CSS
   padding-top: 37px;
   padding-bottom: 44px;
 }
-.banner .shop-now{
+
+.banner .shop-now {
   display: inline-block;
   padding: 16px 27px;
   color: var(--grey-bg2);
@@ -34,8 +37,9 @@ banner CSS
   font-size: 16px;
   text-transform: capitalize;
 }
+
 .banner .banner-btn-next,
-.banner .banner-btn-prev{
+.banner .banner-btn-prev {
   height: 44px;
   width: 44px;
   border-radius: 8px;
@@ -49,20 +53,25 @@ banner CSS
   z-index: 20;
   box-shadow: 0px 22.2211px 46.294px rgba(0, 0, 0, 0.1);
 }
-.banner .banner-btn-prev{
+
+.banner .banner-btn-prev {
   left: 0;
 }
-.banner .banner-btn-next{
+
+.banner .banner-btn-next {
   right: 0;
 }
+
 .banner .banner-btn-next i,
-.banner .banner-btn-prev i{
+.banner .banner-btn-prev i {
   color: var(--orange);
   font-size: 20px;
 }
+
 .banner .swiper-pagination {
   bottom: 26px;
 }
+
 .banner .swiper-pagination-bullet {
   height: 11px;
   width: 11px;
@@ -70,52 +79,63 @@ banner CSS
   opacity: 1;
   transition: all 0.3s;
 }
-.banner .swiper-pagination-bullet-active{
+
+.banner .swiper-pagination-bullet-active {
   width: 30px;
   background-color: var(--primary);
   border-radius: 8px;
 }
 
 @media screen and (max-width:767px) {
-  .banner .slide-item{
+  .banner .slide-item {
     background: url('../images/banner-sm.png') no-repeat center;
     background-size: cover;
   }
-  .banner .banner-slide{
+
+  .banner .banner-slide {
     margin: 0;
     border-radius: 0;
   }
-  .banner .slide-item{
+
+  .banner .slide-item {
     padding: 40px 16px 88px;
     border-radius: 0;
     text-align: center;
   }
+
   .banner .banner-btn-next,
-  .banner .banner-btn-prev{
+  .banner .banner-btn-prev {
     display: none;
   }
-  .banner .banner-col{
+
+  .banner .banner-col {
     padding: 0 !important;
   }
-  .banner h1{
+
+  .banner h1 {
     font-size: 24px;
   }
-  .banner p{
+
+  .banner p {
     font-size: 14px;
     line-height: 21px;
     margin: auto;
   }
-  .banner .shop-now{
+
+  .banner .shop-now {
     padding: 10px 24px;
     font-size: 14px;
   }
+
   .banner .swiper-pagination {
     bottom: 12px;
   }
+
   .banner .swiper-pagination-bullet {
     height: 8px;
     width: 8px;
   }
+
   .banner .swiper-pagination-bullet-active {
     width: 30px;
     border-radius: 8px;
@@ -123,75 +143,93 @@ banner CSS
 }
 
 @media (min-width:576px) and (max-width:767px) {
-  .banner .banner-slide{
+  .banner .banner-slide {
     margin: 10px;
   }
-  .banner .banner-slide{
+
+  .banner .banner-slide {
     border-radius: 20px;
   }
-  .banner h1{
+
+  .banner h1 {
     font-size: 28px;
   }
-  .banner p{
+
+  .banner p {
     font-size: 16px;
     line-height: 22px;
   }
-  .banner .shop-now{
+
+  .banner .shop-now {
     font-size: 16px;
     padding: 10px 24px;
   }
-  .banner .swiper-pagination-bullet{
+
+  .banner .swiper-pagination-bullet {
     height: 10px;
     width: 10px;
   }
+
   .banner .swiper-pagination-bullet-active {
     width: 30px;
     border-radius: 8px;
   }
 }
+
 @media (min-width:768px) and (max-width:991px) {
+
   .banner .banner-btn-next,
-  .banner .banner-btn-prev{
+  .banner .banner-btn-prev {
     display: none;
   }
-  .banner .banner-slide{
+
+  .banner .banner-slide {
     margin: 20px 0;
     border-radius: 20px;
   }
-  .banner .slide-item{
+
+  .banner .slide-item {
     padding: 40px 16px 80px;
     border-radius: 0;
     text-align: center;
   }
-  .banner h1{
+
+  .banner h1 {
     font-size: 28px;
   }
-  .banner p{
+
+  .banner p {
     font-size: 16px;
     line-height: 22px;
     max-width: 100%;
   }
+
   .banner .swiper-pagination {
     bottom: 12px;
   }
-  .banner .shop-now{
+
+  .banner .shop-now {
     font-size: 16px;
     padding: 10px 24px;
   }
-  .banner .swiper-pagination-bullet{
+
+  .banner .swiper-pagination-bullet {
     height: 10px;
     width: 10px;
   }
+
   .banner .swiper-pagination-bullet-active {
     width: 30px;
     border-radius: 8px;
   }
 }
+
 @media (min-width:992px) and (max-width:1199px) {
-  .banner h1{
+  .banner h1 {
     font-size: 38px;
   }
-  .banner p{
+
+  .banner p {
     font-size: 18px;
     line-height: 28px;
     max-width: 100%;
@@ -199,11 +237,13 @@ banner CSS
     padding-bottom: 40px;
   }
 }
+
 @media (min-width:1200px) and (max-width:1399px) {
-  .banner h1{
+  .banner h1 {
     font-size: 46px;
   }
-  .banner p{
+
+  .banner p {
     font-size: 18px;
     line-height: 28px;
     max-width: 80%;
@@ -215,19 +255,22 @@ banner CSS
 /*===========================================================
 top-category CSS
 =============================================================*/
-.top-category{
+.top-category {
   padding: 40px 0;
 }
-.top-category .title{
+
+.top-category .title {
   padding-bottom: 40px;
 }
-.top-category .title h2{
+
+.top-category .title h2 {
   font-size: 32px;
   font-weight: 600;
   text-transform: capitalize;
   color: var(--black);
 }
-.top-category .single-category{
+
+.top-category .single-category {
   max-height: 130px;
   display: flex;
   align-items: center;
@@ -239,7 +282,8 @@ top-category CSS
   background-color: #FBFBFB;
   border-radius: 16px;
 }
-.top-category .single-category span{
+
+.top-category .single-category span {
   display: inline-block;
   color: var(--light-black);
   font-size: 16px;
@@ -247,65 +291,78 @@ top-category CSS
 }
 
 @media screen and (max-width:767px) {
-  .top-category .title{
+  .top-category .title {
     padding-bottom: 24px;
   }
-  .top-category .title h2{
+
+  .top-category .title h2 {
     font-size: 16px;
     font-weight: 700;
   }
-  .top-category .single-category{
+
+  .top-category .single-category {
     padding: 8px 6px;
     border: 1px solid rgba(57, 61, 79, 0.03);
     flex-direction: column;
     height: 100px;
   }
-  .top-category .single-category span{
+
+  .top-category .single-category span {
     font-size: 12px;
     font-weight: 500;
     text-align: center;
   }
-  .top-category .single-category img{
+
+  .top-category .single-category img {
     height: 56px;
   }
-  .top-category .top-category-row.row{
+
+  .top-category .top-category-row.row {
     --bs-gutter-y: 1rem;
     --bs-gutter-x: 1rem;
   }
 }
+
 @media (min-width:576px) and (max-width:767px) {
-  .top-category .title h2{
+  .top-category .title h2 {
     font-size: 22px;
   }
-  .top-category .single-category span{
+
+  .top-category .single-category span {
     font-size: 14px;
   }
 }
+
 @media (min-width:768px) and (max-width:991px) {
-  .top-category .single-category{
+  .top-category .single-category {
     padding: 15px;
     gap: 10px;
     flex-direction: column;
   }
+
   .top-category .single-category span {
     font-size: 14px;
     font-weight: 500;
   }
 }
+
 @media (min-width:1200px) and (max-width:1399px) {
   .top-category .single-category {
     padding: 20px;
     gap: 4px;
   }
-  .top-category .single-category img{
+
+  .top-category .single-category img {
     width: 50px;
   }
+
   .top-category .single-category span {
     font-size: 14px;
   }
 }
+
 @media (min-width:1400px) and (max-width:1599px) {
-  .top-category .single-category img{
+  .top-category .single-category img {
     width: 56px;
   }
 }
@@ -313,18 +370,21 @@ top-category CSS
 /*===========================================================
 featured-product CSS
 =============================================================*/
-.featured-product{
+.featured-product {
   padding: 64px 0;
 }
-.featured-product .title{
+
+.featured-product .title {
   padding-bottom: 64px;
 }
-.featured-product .title h2{
+
+.featured-product .title h2 {
   font-size: 24px;
   font-weight: 600;
   color: var(--secondary);
 }
-.featured-product .title .timer{
+
+.featured-product .title .timer {
   padding: 10px 12px;
   background-color: var(--primary);
   color: var(--white);
@@ -335,42 +395,49 @@ featured-product CSS
 
 
 @media screen and (max-width:767px) {
-  .featured-product{
+  .featured-product {
     padding: 40px 0;
   }
-  .featured-product .featured-row{
+
+  .featured-product .featured-row {
     --bs-gutter-y: 1.5rem;
   }
-  .featured-product .title{
+
+  .featured-product .title {
     flex-direction: column;
     padding-bottom: 24px;
   }
-  .featured-product .title h2{
+
+  .featured-product .title h2 {
     padding-bottom: 16px;
     font-size: 16px;
     font-weight: 700;
   }
-  .featured-product .title .timer{
+
+  .featured-product .title .timer {
     padding: 8px 12px;
     font-size: 12px;
   }
 }
+
 @media (min-width:576px) and (max-width:767px) {
-  .featured-product .title{
+  .featured-product .title {
     flex-direction: row;
   }
-  .featured-product .title h2{
+
+  .featured-product .title h2 {
     font-size: 18px;
   }
 }
+
 @media (min-width:768px) and (max-width:991px) {
-  .featured-product .featured-row{
+  .featured-product .featured-row {
     --bs-gutter-y: 1.5rem;
   }
 }
 
 @media (min-width:992px) and (max-width:1199px) {
-  .featured-product .featured-row{
+  .featured-product .featured-row {
     --bs-gutter-y: 1.5rem;
   }
 }
@@ -379,26 +446,30 @@ featured-product CSS
 /*===========================================================
 promotion CSS
 =============================================================*/
-.promotion{
+.promotion {
   padding: 64px 0;
 }
-.promotion .img{
+
+.promotion .img {
   border-radius: 20px;
   overflow: hidden;
   margin-bottom: 20px;
 }
-.promotion h4{
+
+.promotion h4 {
   font-size: 20px;
   font-weight: 600;
   color: var(--secondary);
 }
-.promotion p{
+
+.promotion p {
   font-size: 14px;
   color: rgba(0, 0, 0, 0.6);
   padding-top: 8px;
   padding-bottom: 24px;
 }
-.promotion .shop-now{
+
+.promotion .shop-now {
   width: fit-content;
   display: flex;
   align-items: center;
@@ -412,51 +483,73 @@ promotion CSS
   border: 1px solid var(--secondary);
   background-color: transparent;
 }
+
+.promotion .shop-now i {
+  font-size: 24px;
+}
+
 .promotion .shop-now:hover,
-.promotion .shop-now:hover i{
+.promotion .shop-now:hover i {
   color: var(--white);
 }
 
 @media screen and (max-width:767px) {
-  .promotion{
+  .promotion {
     padding: 40px 0;
   }
-  .promotion .img{
+
+  .promotion .img {
     border-radius: 8px;
     margin-bottom: 16px;
   }
-  .promotion h4{
+
+  .promotion h4 {
     font-size: 14px;
   }
-  .promotion p{
+
+  .promotion p {
     padding-bottom: 12px;
     font-size: 12px;
   }
-  .promotion .shop-now{
+
+  .promotion .shop-now {
     padding: 5px 6px;
     gap: 5px;
     font-size: 12px;
     line-height: 20px;
   }
-  .promotion .promotion-row{
+
+  .promotion .shop-now i {
+    font-size: 18px;
+  }
+
+  .promotion .promotion-row {
     --bs-gutter-y: 1.5rem;
   }
 }
+
 @media (min-width:768px) and (max-width:991px) {
-  .promotion h4{
+  .promotion h4 {
     font-size: 16px;
   }
-  .promotion p{
+
+  .promotion p {
     padding-bottom: 14px;
     font-size: 14px;
   }
-  .promotion .shop-now{
+
+  .promotion .shop-now {
     padding: 8px 10px;
     gap: 8px;
     font-size: 14px;
     line-height: 21px;
   }
-  .promotion .img{
+
+  .promotion .shop-now i {
+    font-size: 18px;
+  }
+
+  .promotion .img {
     border-radius: 10px;
   }
 }
@@ -464,26 +557,30 @@ promotion CSS
 /*===========================================================
 trending CSS
 =============================================================*/
-.trending{
+.trending {
   padding: 64px 0;
 }
-.trending .title{
+
+.trending .title {
   padding-bottom: 24px;
 }
-.trending .title h2{
+
+.trending .title h2 {
   font-size: 24px;
   font-weight: 600;
   color: var(--secondary);
   line-height: 36px;
   padding-bottom: 0;
 }
-.trending .load-more{
+
+.trending .load-more {
   padding-top: 16px;
 }
-.trending .load-more-btn{
+
+.trending .load-more-btn {
   width: 276px;
   text-align: center;
-  padding: 12px 0;
+  padding: 11px 0;
   font-size: 14px;
   line-height: 21px;
   font-weight: 500;
@@ -491,35 +588,41 @@ trending CSS
   text-transform: uppercase;
   border-radius: 8px;
   border: 1px solid var(--primary);
+  box-sizing: border-box;
 }
 
-.trending .load-more-btn.btn-animation:after{
+.trending .load-more-btn.btn-animation:after {
   background-color: var(--primary);
 }
-.trending .load-more-btn:hover{
+
+.trending .load-more-btn:hover {
   color: var(--white);
 }
 
 @media screen and (max-width:767px) {
-  .trending{
+  .trending {
     padding: 40px 0;
   }
-  .trending .title h2{
+
+  .trending .title h2 {
     font-size: 16px;
     font-weight: 700;
   }
-  .trending .load-more{
+
+  .trending .load-more {
     padding-top: 0;
   }
-  .trending .load-more-btn{
+
+  .trending .load-more-btn {
     width: auto;
     padding: 10px 24px;
     font-size: 14px;
     line-height: 20px;
   }
 }
+
 @media (min-width:576px) and (max-width:767px) {
-  .trending .title h2{
+  .trending .title h2 {
     font-size: 18px;
   }
 }

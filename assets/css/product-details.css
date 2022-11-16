@@ -1,19 +1,23 @@
 /*===========================================================
 product details CSS
 =============================================================*/
-.product-details .product-details-wrapper{
+.product-details .product-details-wrapper {
   padding: 64px;
 }
-.product-details-wrapper .product-description .main-feature{
+
+.product-details-wrapper .product-description .main-feature {
   padding-right: 0;
 }
-.details-description{
+
+.details-description {
   padding-top: 64px;
   padding-bottom: 40px;
 }
-.details-description .nav-tabs{
+
+.details-description .nav-tabs {
   border: 0;
 }
+
 .details-description .nav-tabs .nav-link {
   border-radius: 0;
   padding: 14px 44px;
@@ -23,47 +27,57 @@ product details CSS
   color: var(--primary);
   text-transform: uppercase;
 }
-.details-description .nav-tabs .nav-link.active{
+
+.details-description .nav-tabs .nav-link.active {
   border-color: rgba(115, 113, 252, 0.08);
   background-color: rgba(115, 113, 252, 0.08);
 }
-.details-description .nav-tabs .nav-item:not(:last-child){
+
+.details-description .nav-tabs .nav-item:not(:last-child) {
   margin-right: 2px;
 }
-.details-description .nav-tabs .nav-item:first-child .nav-link{
+
+.details-description .nav-tabs .nav-item:first-child .nav-link {
   border-top-left-radius: 16px;
 }
-.details-description .nav-tabs .nav-item:last-child .nav-link{
+
+.details-description .nav-tabs .nav-item:last-child .nav-link {
   border-top-right-radius: 16px;
 }
-.details-description .tab-content{
+
+.details-description .tab-content {
   padding-top: 32px;
 }
-.details-description .tab-content .tab-pane{
+
+.details-description .tab-content .tab-pane {
   padding: 57px 0 24px 57px;
 }
-.details-description .desc-text{
+
+.details-description .desc-text {
   padding-right: 50px;
 }
-.details-description .desc-text h4{
+
+.details-description .desc-text h4 {
   font-size: 24px;
   font-weight: 700;
   color: #252525;
   padding-bottom: 24px;
 }
-.details-description .desc-text p{
+
+.details-description .desc-text p {
   font-size: 16px;
   color: #666666;
   padding-bottom: 24px;
 }
 
-.details-description .desc-text ul{
+.details-description .desc-text ul {
   display: flex;
   flex-wrap: wrap;
   column-gap: 16px;
   row-gap: 24px;
 }
-.details-description .desc-text ul li{
+
+.details-description .desc-text ul li {
   width: calc(50% - 8px);
   color: #636363;
   font-weight: 500;
@@ -72,10 +86,10 @@ product details CSS
   position: relative;
 }
 
-.details-description .desc-text ul li::before{
+.details-description .desc-text ul li::before {
   content: '';
-  width: 0; 
-  height: 0; 
+  width: 0;
+  height: 0;
   border-top: 6px solid transparent;
   border-bottom: 6px solid transparent;
   border-left: 6px solid var(--primary);
@@ -84,10 +98,12 @@ product details CSS
   transform: translateY(-50%);
   left: 0;
 }
-.details-description .product-desc-slider{
+
+.details-description .product-desc-slider {
   border-radius: 16px;
 }
-.details-description .product-desc-slider .item{
+
+.details-description .product-desc-slider .item {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -97,14 +113,15 @@ product details CSS
   border-radius: 16px;
 }
 
-.details-description .product-desc-slider .swiper-pagination-bullet{
+.details-description .product-desc-slider .swiper-pagination-bullet {
   height: 8px;
   width: 8px;
   background-color: #D9D9D9;
   opacity: 1;
   transition: all 0.3s;
 }
-.details-description .product-desc-slider .swiper-pagination-bullet-active{
+
+.details-description .product-desc-slider .swiper-pagination-bullet-active {
   background-color: var(--primary);
 }
 
@@ -112,16 +129,20 @@ product details CSS
   .product-details .product-details-wrapper {
     padding: 0;
   }
-  .product-details .product-description{
+
+  .product-details .product-description {
     text-align: center;
   }
+
   .product-details .product-description .price {
     align-items: center !important;
   }
-  .product-details .product-description .colors ul ,
+
+  .product-details .product-description .colors ul,
   .product-details .product-description .sizes ul {
     justify-content: center;
   }
+
   .product-details .product-description .buttons {
     position: fixed;
     bottom: 0;
@@ -131,12 +152,15 @@ product details CSS
     background-color: var(--white);
     padding: 12px 16px;
   }
+
   .details-description {
     padding-top: 40px;
   }
+
   .details-description .nav-tabs .nav-item {
     width: calc(33% - 4px);
   }
+
   .details-description .nav-tabs .nav-link {
     padding: 0;
     width: 100%;
@@ -144,82 +168,109 @@ product details CSS
     font-size: 12px;
     font-weight: 500;
   }
+
   .details-description .tab-content .tab-pane {
     padding: 0;
   }
+
   .details-description .desc-text {
     padding-right: 0;
   }
+
   .details-description .desc-text ul li {
     width: 100%;
     font-size: 14px;
     line-height: 24px;
     padding-left: 22px;
-  row-gap: 12px;
+    row-gap: 12px;
   }
-  .details-description .product-desc-slider{
+
+  .details-description .product-desc-slider {
     margin-top: 24px;
   }
+
   .details-description .product-desc-slider .item {
     height: 288px;
   }
 }
+
+@media (min-width:768px) and (max-width:991px) {
+  .details-description .product-desc-slider {
+    margin-top: 24px;
+  }
+
+  .details-description .product-desc-slider .item {
+    height: 300px;
+  }
+}
+
 @media (min-width:768px) and (max-width:1199px) {
   .product-details .product-details-wrapper {
     padding: 40px 0;
   }
+
   .details-description .tab-content .tab-pane {
     padding: 0;
   }
+
   .details-description .desc-text {
     padding-right: 0;
   }
+
   .details-description .desc-text ul li {
     width: 100%;
     font-size: 14px;
     line-height: 24px;
     padding-left: 22px;
-  row-gap: 12px;
+    row-gap: 12px;
   }
 }
+
 @media (min-width:992px) and (max-width:1199px) {
   .product-thumb .swiper-slide {
     height: 80px;
   }
 }
+
 @media (min-width:1200px) and (max-width:1399px) {
   .product-thumb .swiper-slide {
     height: 90px;
   }
+
   .product-details .product-details-wrapper {
     padding: 40px 0;
   }
 }
+
 /*===========================================================
 related product CSS
 =============================================================*/
-.related-products{
+.related-products {
   padding: 40px 0 20px;
   margin-bottom: 58px;
 }
-.related-products .title{
+
+.related-products .title {
   padding-bottom: 40px;
 }
-.related-products .title h2{
+
+.related-products .title h2 {
   font-size: 32px;
   font-weight: 700;
   color: var(--black);
 }
-.related-products .related-product-slider{
+
+.related-products .related-product-slider {
   padding: 10px 5px 20px;
 }
 
 
 @media screen and (max-width:767px) {
-  .related-products .title{
+  .related-products .title {
     padding-bottom: 24px;
   }
-  .related-products .title h2{
+
+  .related-products .title h2 {
     font-size: 16px;
     line-height: 24px;
   }

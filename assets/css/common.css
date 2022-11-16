@@ -196,6 +196,7 @@ a:focus {
   background: var(--white);
 
 }
+
 .loading {
   text-align: center;
   font-weight: 700;
@@ -214,40 +215,45 @@ a:focus {
 .loading span:nth-child(1) {
   animation-delay: 0s;
 }
+
 .loading span:nth-child(2) {
   animation-delay: 0.1s;
 }
+
 .loading span:nth-child(3) {
   animation-delay: 0.2s;
 }
+
 .loading span:nth-child(4) {
   animation-delay: 0.3s;
 }
+
 .loading span:nth-child(5) {
   animation-delay: 0.4s;
 }
+
 .loading span:nth-child(6) {
   animation-delay: 0.5s;
 }
+
 @keyframes loadingText {
   0% {
-    /* transform:translateY(-40px); */
     opacity: 1;
   }
+
   100% {
-    /* transform:translateY(0px); */
     opacity: 0;
   }
 }
 
 /* button hover animation */
-.btn-animation{
+.btn-animation {
   position: relative;
   overflow: hidden;
   z-index: 10;
 }
 
-.btn-animation:after{
+.btn-animation:after {
   content: '';
   height: 100%;
   width: 0;
@@ -258,10 +264,22 @@ a:focus {
   z-index: -1;
   transition: all ease-in-out 0.3s;
 }
-.btn-animation:hover:after{
+
+.btn-animation:hover:after {
   width: 100%;
   left: 0;
   right: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .loading {
+    font-size: 36px;
+    line-height: 56px;
+  }
+
+  .loading span {
+    margin: 0 -3px;
+  }
 }
 
 /*===========================================================
@@ -278,8 +296,9 @@ Sticky header CSS
 main {
   margin-top: 140px;
 }
+
 @media screen and (max-width: 1199px) {
-  main{
+  main {
     margin-top: 60px;
   }
 }
@@ -336,7 +355,9 @@ Top-bar CSS
   font-size: 14px;
   line-height: 21px;
   color: var(--light-grey2);
+  cursor: pointer;
 }
+
 
 .top-bar p {
   display: flex;
@@ -433,7 +454,8 @@ mid-bar CSS
   color: var(--white);
   font-size: 24px;
 }
-.mid-bar .fav-btn span{
+
+.mid-bar .fav-btn span {
   display: inline-block;
   padding: 2px 6px;
   background-color: var(--secondary);
@@ -495,6 +517,7 @@ mid-bar CSS
     width: 30px;
   }
 }
+
 /*===========================================================
 Cart CSS
 =============================================================*/
@@ -557,17 +580,21 @@ Cart CSS
   background-color: var(--grey-bg2);
   padding: 4px 15px;
 }
-.menu_content_heading .add_item{
+
+.menu_content_heading .add_item {
   border-color: var(--primary);
   color: var(--primary);
 }
+
 .menu_content_heading .add_item:hover {
   background-color: var(--primary);
   color: var(--white);
 }
-.menu_content_heading .add_item:hover svg path{
+
+.menu_content_heading .add_item:hover svg path {
   stroke: var(--white);
 }
+
 .menu_content_heading h4 {
   font-size: 16px;
   line-height: 24px;
@@ -628,7 +655,8 @@ Cart CSS
   width: 25%;
   padding: 0;
 }
-.cart_counter .btn-group button:focus{
+
+.cart_counter .btn-group button:focus {
   border: 0;
 }
 
@@ -720,11 +748,11 @@ Cart CSS
 }
 
 /* mobile place order */
-.mobile_place_order button{
+.mobile_place_order button {
   border: none;
 }
 
-.mobile_place_order button:first-child{
+.mobile_place_order button:first-child {
   padding: 6px;
   font-style: normal;
   font-weight: 600;
@@ -734,18 +762,19 @@ Cart CSS
   background: var(--primary);
 }
 
-.mobile_place_order{
-background: var(--white);
-box-shadow: 0px -4px 40px rgba(0, 0, 0, 0.15);
-position: fixed;
-width: 100%;
-bottom: calc(0% + 62px);
+.mobile_place_order {
+  background: var(--white);
+  box-shadow: 0px -4px 40px rgba(0, 0, 0, 0.15);
+  position: fixed;
+  width: 100%;
+  bottom: calc(0% + 62px);
 }
 
-.mobile_place_order button{
+.mobile_place_order button {
   width: 49%;
 }
-.mobile_place_order button:last-child{
+
+.mobile_place_order button:last-child {
   padding: 6px;
   font-style: normal;
   font-weight: 600;
@@ -754,7 +783,8 @@ bottom: calc(0% + 62px);
   color: var(--primary);
   background: white;
 }
-.mobile_place_order button:last-child span{
+
+.mobile_place_order button:last-child span {
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
@@ -766,18 +796,22 @@ bottom: calc(0% + 62px);
     max-height: calc(100vh - 288px);
     padding: 10px 0;
   }
+
   .menu_content_heading h4 {
     text-transform: uppercase;
     color: var(--light-grey1);
   }
+
   .carted_item_name h3 {
     font-size: 12px;
     line-height: 18px;
   }
+
   .carted_items {
     gap: 4px;
     padding: 4px 0;
   }
+
   .carted_image {
     max-width: 60px;
   }
@@ -786,39 +820,46 @@ bottom: calc(0% + 62px);
 /*===========================================================
 mobile favourite CSS
 =============================================================*/
-.mobile_favourite .row{
+.mobile_favourite .row {
   --bs-gutter-x: 15px;
   --bs-gutter-y: 15px;
 }
-.mobile_favourite .mob_fav_items{
+
+.mobile_favourite .mob_fav_items {
   padding: 15px 0;
 }
 
 @media screen and (max-width: 1199px) {
-  .mobile_favourite .container{
+  .mobile_favourite .container {
     max-width: 100% !important;
   }
 }
+
 @media (min-width:768px) and (max-width: 991px) {
   .mobile_favourite .single-product .buy-now {
     padding: 4px 15px;
     font-size: 12px;
     border-radius: 5px;
   }
+
   .mobile_favourite .single-product .add-to-cart {
     padding: 4px 15px;
     font-size: 12px;
   }
+
   .mobile_favourite .single-product .btn-group {
     width: 90px;
   }
+
   .mobile_favourite .single-product .btn-group .add_to_bag {
     width: 30px;
   }
+
   .mobile_favourite .single-product .btn-group input {
     width: calc(100% - 60px);
   }
 }
+
 /*===========================================================
 menu-bar CSS
 =============================================================*/
@@ -934,7 +975,8 @@ all-categories CSS
   flex-wrap: wrap;
   margin: auto;
 }
-.nav_mega_menu .nav_mega_content .nav_gap{
+
+.nav_mega_menu .nav_mega_content .nav_gap {
   --bs-gutter-y: 64px;
 }
 
@@ -984,7 +1026,7 @@ all-categories CSS
     width: 96%;
   }
 
-  .nav_mega_menu .nav_mega_content .nav_gap{
+  .nav_mega_menu .nav_mega_content .nav_gap {
     --bs-gutter-y: 32px;
   }
 
@@ -1017,6 +1059,7 @@ mobile header CSS
   display: inline-grid;
   width: 100%;
 }
+
 /*================== mobile menu content ====================*/
 .mobile_menu_content {
   position: absolute;
@@ -1033,6 +1076,7 @@ mobile header CSS
   right: 0% !important;
   z-index: 990;
 }
+
 /*================== mobile menu closer ====================*/
 .mobile_menu_closer {
   padding: 5px 12px;
@@ -1233,18 +1277,21 @@ mobile header CSS
 
 /*================== mobile search bar ====================*/
 
-.mobile_menu_content .search_bar button{
+.mobile_menu_content .search_bar button {
   background: var(--primary);
   border: 1px solid transparent;
 }
-.mobile_menu_content .search_bar input{
+
+.mobile_menu_content .search_bar input {
   background-color: #F7F7F7;
   border-color: #F7F7F7;
 }
-.mobile_menu_content ::placeholder{
+
+.mobile_menu_content ::placeholder {
   color: rgba(215, 215, 215, 1);
 }
-.mobile_menu_content .input-group{
+
+.mobile_menu_content .input-group {
   height: 40px;
   margin-top: 10px;
 }
@@ -1264,7 +1311,8 @@ mobile header CSS
   display: inline-block;
   margin-bottom: 5px;
 }
-.mobile_search h3{
+
+.mobile_search h3 {
   font-size: 16px;
   line-height: 24px;
   margin: 20px 0;

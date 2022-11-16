@@ -168,7 +168,7 @@ products CSS
 }
 
 .products .filtered-products .accordion-button {
-  padding: 16px;
+  padding: 10px 16px;
   font-size: 16px;
   font-weight: 700;
   color: var(--secondary);
@@ -189,6 +189,7 @@ products CSS
   content: '+';
   background: none;
   font-size: 30px;
+  line-height: 36px;
   font-weight: 300;
   height: auto;
   width: auto;
@@ -198,7 +199,8 @@ products CSS
   background-image: none;
   transform: none;
   content: '-';
-  font-size: 34px;
+  font-size: 36px;
+  line-height: 36px;
   font-weight: 300;
   height: auto;
   width: auto;
@@ -208,6 +210,7 @@ products CSS
   padding: 0;
   padding-top: 24px;
 }
+
 
 .products .filtered-products .sort-by {
   gap: 20px;
@@ -339,7 +342,7 @@ products CSS
   height: 20px;
   width: 20px;
   border-radius: 3px;
-  border: 2px solid rgba(57, 61, 79, 0.5);
+  border: 2px solid rgba(57, 61, 79, 0.2);
 }
 
 .products .refine-category .check-container input:checked~.checkmark {
@@ -366,6 +369,17 @@ products CSS
   transform: rotate(45deg);
 }
 
+.products .filtered-products .item-price {
+  padding: 12px 16px 40px 16px;
+}
+
+.products .filtered-products .item-price .item-header {
+  font-size: 16px;
+  color: var(--secondary);
+  font-weight: 700;
+  padding-bottom: 12px;
+}
+
 .products .filtered-products .price-input {
   gap: 9px;
 }
@@ -384,7 +398,18 @@ products CSS
 
 .products .filtered-products .price-input input::placeholder {
   font-size: 16px;
-  color: rgba(57, 61, 79, 0.2);
+  color: rgba(57, 61, 79, 0.3);
+}
+
+.products .filtered-products .mob-title {
+  padding-bottom: 24px;
+  display: none;
+}
+
+.products .filtered-products .mob-title h2 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--black);
 }
 
 .products .load-more {
@@ -396,17 +421,20 @@ products CSS
   text-align: center;
   padding: 8px 0;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 18px;
   font-weight: 500;
   color: var(--primary);
   text-transform: uppercase;
   border-radius: 8px;
   border: 1px solid var(--primary);
+  box-sizing: border-box;
 }
-.products .load-more-btn.btn-animation:after{
+
+.products .load-more-btn.btn-animation:after {
   background-color: var(--primary);
 }
-.products .load-more-btn:hover{
+
+.products .load-more-btn:hover {
   color: var(--white);
 }
 
@@ -453,6 +481,10 @@ products CSS
     display: flex !important;
   }
 
+  .products .filtered-products .mob-title {
+    display: block;
+  }
+
   .products .filter-action {
     position: fixed;
     height: 100vh;
@@ -471,6 +503,10 @@ products CSS
 
   .products .filter-action .mobile-title {
     display: block;
+  }
+
+  .products .filtered-products {
+    padding-top: 40px;
   }
 
   .products .filtered-products .accordion {
@@ -505,6 +541,24 @@ products CSS
   .products .refine-category ul p {
     font-size: 14px;
   }
+
+  .products .filtered-products .item-price {
+    padding: 12px 12px 30px 12px;
+  }
+
+  .products .filtered-products .item-price .item-header {
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .products .filtered-products .price-input input {
+    height: 32px;
+    font-size: 12px;
+  }
+
+  .products .filtered-products .price-input input::placeholder {
+    font-size: 12px;
+  }
 }
 
 @media (min-width:992px) and (max-width:1199px) {
@@ -514,13 +568,14 @@ products CSS
 
   .products .filtered-products .accordion-button {
     padding: 13px 12px;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 500;
     border-color: rgba(0, 0, 0, 0.06);
   }
 
+  .products .filtered-products .accordion-button::after,
   .products .filtered-products .accordion-button:not(.collapsed)::after {
-    line-height: 20px;
+    line-height: 24px;
   }
 
   .products .filtered-products .sort-by {
@@ -538,6 +593,33 @@ products CSS
 
   .products .filtered-products .sort-by li a {
     width: 125px;
+  }
+
+  .products .filtered-products .item-price {
+    padding: 12px 12px 30px 12px;
+  }
+
+  .products .filtered-products .item-price .item-header {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .products .filtered-products .price-input input {
+    height: 36px;
+    font-size: 14px;
+  }
+
+  .products .filtered-products .price-input input::placeholder {
+    font-size: 14px;
+  }
+
+  .products .filter-select button,
+  .products .filter-select .dropdown-item {
+    font-size: 14px;
+  }
+
+  .products .filter-select .dropdown-menu {
+    width: 264px;
   }
 }
 
