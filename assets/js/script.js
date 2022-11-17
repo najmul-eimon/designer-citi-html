@@ -90,7 +90,7 @@ $(function () {
 
   var swiperBanner = new Swiper(".banner-slide", {
     slidesPerView: 1,
-    spaceBetween: 0,
+    spaceBetween: 20,
     loop: true,
     navigation: {
       nextEl: ".banner-btn-next",
