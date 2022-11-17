@@ -631,6 +631,7 @@ product details modal CSS
 
   .product-description .sizes ul {
     flex-wrap: wrap;
+    gap: 22px;
   }
 
   .product-description .buttons {
@@ -646,9 +647,14 @@ product details modal CSS
     width: 100px;
     font-size: 14px;
   }
+  .product-description .buttons .btn-group ,
+  .product-description .buttons .add-to-cart {
+    margin-left: 8px;
+  }
 
   .product-description .buttons .full-product-view {
     margin-top: 32px;
+    margin-left: -45px;
   }
 
   .product-description .buttons .btns {

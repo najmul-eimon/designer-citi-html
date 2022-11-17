@@ -542,7 +542,7 @@ Cart CSS
   right: 0px;
   top: 50%;
   width: 500px;
-  min-height: 500px;
+  min-height: 80vh;
   border-radius: 15px;
   box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.15);
   opacity: 0;
@@ -608,7 +608,7 @@ Cart CSS
 }
 
 .selected-cart-items {
-  max-height: 400px;
+  max-height: calc(80vh - 122px);
   overflow-y: auto;
   padding: 20px 0;
 }
@@ -1517,9 +1517,15 @@ footer-top CSS
     padding-top: 20px;
     padding-bottom: 24px;
   }
+  .footer-top .footer-logo img{
+    width: 150px;
+  } 
 
   .footer-top .social {
     padding-top: 16px;
+  }
+  .footer-top .social li a svg{
+    height: 17px;
   }
 
   .footer-title-area {
@@ -1540,7 +1546,7 @@ footer-top CSS
 
   .footer-top .location {
     padding: 20px;
-    margin-top: 24px;
+    margin: 24px auto 0 auto;
     gap: 20px;
   }
 
@@ -1559,6 +1565,9 @@ footer-top CSS
   .footer-top .location-list li a {
     justify-content: center;
     font-size: 18px;
+  }
+  .footer-links li:not(:last-child) {
+    margin-bottom: 8px;
   }
 }
 
