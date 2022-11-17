@@ -579,6 +579,12 @@ products CSS
   
 }
 
+@media (min-width: 576px) and (max-width:991px) {
+  .products .filtered-products .price-input input {
+    height: 40px;
+  }
+}
+
 @media (min-width:992px) and (max-width:1199px) {
   .products .filtered-products .accordion {
     padding: 10px;

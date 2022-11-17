@@ -45,7 +45,8 @@ $(function () {
     if (mobile_menu_content_name == "home") {
       $(".mobile_menu_closer").removeClass('show');
       $("body").removeClass("body_scroll_lock");
-    } else {
+    } 
+    else {
       $("body").addClass("body_scroll_lock");
       $(".mobile_menu_closer").addClass('show');
     }
@@ -56,7 +57,7 @@ $(function () {
     $("." + mobile_menu_content_name).toggleClass("mobile_content_switch");
 
     //Activing color
-    $(".mobile_menu a, .mobile_top_bar a ").removeClass("mob_menu_item_active");
+    $(".mobile_menu a, .mobile_top_bar a").removeClass("mob_menu_item_active");
     $(this).addClass("mob_menu_item_active");
   });
 

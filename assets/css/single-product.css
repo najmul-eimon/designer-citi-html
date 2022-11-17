@@ -85,6 +85,10 @@ single-product CSS
   padding: 6px 30px;
   font-size: 16px;
   color: var(--secondary);
+  transition: all 0.3s;
+}
+.single-product .add-to-cart:hover{
+  color: var(--primary);
 }
 
 .single-product .btn-group {
@@ -159,6 +163,12 @@ single-product CSS
   .single-product .add-to-cart {
     padding: 4px 30px;
     font-size: 12px;
+  }
+}
+
+@media (min-width: 768px) and (max-width:991px) {
+  .single-product .img {
+    height: 235px;
   }
 }
 
@@ -254,6 +264,11 @@ size chart modal CSS
   background: var(--primary);
   border-radius: 4px;
   opacity: 1;
+}
+@media (min-width: 576px) and (max-width: 800px) {
+  .size-chart-modal .modal-dialog {
+    margin: 16px;
+  }
 }
 
 /*===========================================================

@@ -62,6 +62,9 @@ body {
   font-family: var(--poppins);
   overflow: hidden;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 * {
   margin: 0;
@@ -1029,6 +1032,7 @@ all-categories CSS
 
   .all-categories .nav_mega_menu {
     width: 96%;
+    margin-top: 0;
   }
 
   .nav_mega_menu .nav_mega_content .nav_gap {
@@ -1132,16 +1136,28 @@ mobile header CSS
 }
 
 @media screen and (max-width: 400px) {
-  .mobile_item_heading {
-    padding-left: 15px;
+  .mobile_cat .tab-content {
+    padding-left: 10px;
   }
+}
+@media screen and (min-width: 992px) {
+  .mobile_cat .tab-content {
+    padding-left: 10px;
+  }
+}
+
+/*================== mobile cart ====================*/
+.mobile_cart .container{
+  max-width: 100%;
+}
+.mobile_cart .menu_content_heading{
+  padding: 4px 0;
 }
 
 /*================== mobile category ====================*/
 .accordion-collapse.show {
-  transition: all 4s;
+  transition: all 0.4s;
 }
-
 
 .mobile_cat .all_department_menu {
   padding: 0px;
@@ -1149,10 +1165,13 @@ mobile header CSS
   height: calc(100vh - 150px);
 }
 
+.mobile_cat .all_department_menu .container{
+  max-width: 100%;
+}
+
 .mobile_cat .department_items {
   max-width: 94px;
   width: 100%;
-  position: relative;
   height: calc(100vh - 150px);
   overflow: scroll;
   position: absolute;
@@ -1240,34 +1259,16 @@ mobile header CSS
 .mobile_cat .accordion-item {
   background-color: #fff;
   border: none;
+  margin-bottom: 10px;
 }
 
-.mobile_cat .accordion-button:not(.collapsed) {
-  color: var(--secondary);
-  background-color: transparent;
-  box-shadow: none;
-}
-
-.mobile_cat .accordion-button:not(.collapsed)::after {
-  background-image: url(../images/svg/caret-down.svg);
-  transform: rotate(-180deg);
-}
-
-.mobile_cat .accordion-button::after {
-  background-image: url(../images/svg/caret-down.svg);
-}
-
-.mobile_cat .accordion-button:focus {
+.mobile_cat .accordion-button {
   z-index: 0;
   border-color: none;
   outline: 0;
   box-shadow: none;
-
-  background: #F9F9F9;
+  background: transparent;
   border-radius: 8px;
-}
-
-.mobile_cat .accordion-button {
   padding: 10px;
   font-weight: 500;
   font-size: 14px;
@@ -1275,6 +1276,22 @@ mobile header CSS
   text-transform: capitalize;
   color: var(--secondary);
   padding: 10px 5px 10px 10px;
+}
+
+
+.mobile_cat .accordion-button:not(.collapsed) {
+  color: var(--secondary);
+  background-color: #F9F9F9;
+  box-shadow: none;
+}
+
+.mobile_cat .accordion-button::after {
+  background-image: url(../images/svg/caret-down.svg);
+}
+
+.mobile_cat .accordion-button:not(.collapsed)::after {
+  background-image: url(../images/svg/caret-down.svg);
+  transform: rotate(-180deg);
 }
 
 .mobile_cat .mobile_sub_item ul li {
